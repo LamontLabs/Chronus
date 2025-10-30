@@ -1,0 +1,289 @@
+meta:
+  build_hash: ""
+  version: "v0.2-expanded"
+  date: "2025-10-28"
+
+categories:
+  land:
+    # Fire Age
+    - id: fa001
+      name: "Wolf"
+      biome: "forest"
+      role: "predator"
+      drops: { hide: 15, food: 8 }
+      temperament: "aggressive"
+      rarity: "common"
+      pack_size: "3-7"
+    - id: fa002
+      name: "Mammoth"
+      biome: "tundra"
+      role: "resource_provider"
+      drops: { food: 100, hide: 50, ivory: 20 }
+      temperament: "neutral"
+      rarity: "rare"
+      pack_size: "5-12"
+    - id: fa003
+      name: "Cave Bear"
+      biome: "cavern"
+      role: "apex_predator"
+      drops: { hide: 30, food: 40, claws: 10 }
+      temperament: "territorial"
+      rarity: "uncommon"
+      pack_size: "1-2"
+    - id: fa004
+      name: "Dire Wolf"
+      biome: "plains"
+      role: "pack_hunter"
+      drops: { hide: 20, food: 12 }
+      temperament: "aggressive"
+      rarity: "uncommon"
+      pack_size: "8-15"
+    - id: fa005
+      name: "Wild Boar"
+      biome: "forest"
+      role: "resource_provider"
+      drops: { food: 25, hide: 10 }
+      temperament: "defensive"
+      rarity: "common"
+      pack_size: "4-8"
+    # Stone Age
+    - id: fa006
+      name: "Auroch"
+      biome: "grassland"
+      role: "resource_provider"
+      drops: { food: 80, hide: 40, horns: 15 }
+      temperament: "neutral"
+      rarity: "common"
+      pack_size: "10-20"
+    - id: fa007
+      name: "Saber Cat"
+      biome: "plains"
+      role: "apex_predator"
+      drops: { hide: 35, fangs: 25 }
+      temperament: "aggressive"
+      rarity: "rare"
+      pack_size: "1-3"
+    - id: fa008
+      name: "Giant Sloth"
+      biome: "forest"
+      role: "gatherer"
+      drops: { hide: 50, food: 60 }
+      temperament: "docile"
+      rarity: "uncommon"
+      pack_size: "1-2"
+    # Bronze/Iron Age
+    - id: fa009
+      name: "Horse"
+      biome: "plains"
+      role: "mount"
+      drops: { hide: 30, food: 40 }
+      temperament: "domesticable"
+      rarity: "common"
+      pack_size: "8-20"
+    - id: fa010
+      name: "Bull"
+      biome: "grassland"
+      role: "labor_beast"
+      drops: { food: 70, hide: 35 }
+      temperament: "territorial"
+      rarity: "common"
+      pack_size: "5-10"
+    - id: fa011
+      name: "Tiger"
+      biome: "jungle"
+      role: "apex_predator"
+      drops: { hide: 40, teeth: 20 }
+      temperament: "aggressive"
+      rarity: "rare"
+      pack_size: "1-2"
+    - id: fa012
+      name: "Elephant"
+      biome: "savanna"
+      role: "megafauna"
+      drops: { food: 150, ivory: 80, hide: 70 }
+      temperament: "neutral"
+      rarity: "rare"
+      pack_size: "6-15"
+  
+  air:
+    - id: fa013
+      name: "Hawk"
+      biome: "mountain"
+      role: "observer"
+      drops: { feathers: 5, talons: 3 }
+      temperament: "alert"
+      rarity: "common"
+      pack_size: "1-2"
+    - id: fa014
+      name: "Eagle"
+      biome: "mountain"
+      role: "apex_hunter"
+      drops: { feathers: 12, talons: 8 }
+      temperament: "aggressive"
+      rarity: "uncommon"
+      pack_size: "1-2"
+    - id: fa015
+      name: "Raven"
+      biome: "forest"
+      role: "scavenger"
+      drops: { feathers: 3, omens: 1 }
+      temperament: "intelligent"
+      rarity: "common"
+      pack_size: "5-15"
+    - id: fa016
+      name: "Phoenix"
+      biome: "volcanic"
+      role: "mythic_entity"
+      drops: { essence: 50, phoenix_feather: 1 }
+      temperament: "mystical"
+      rarity: "legendary"
+      pack_size: "1"
+    - id: fa017
+      name: "Condor"
+      biome: "cliffs"
+      role: "scavenger"
+      drops: { feathers: 10, bones: 5 }
+      temperament: "neutral"
+      rarity: "uncommon"
+      pack_size: "2-4"
+  
+  sea:
+    - id: fa018
+      name: "Dolphin"
+      biome: "ocean"
+      role: "guide"
+      drops: { food: 20, oil: 10 }
+      temperament: "friendly"
+      rarity: "common"
+      pack_size: "10-30"
+    - id: fa019
+      name: "Whale"
+      biome: "deep_ocean"
+      role: "resource_provider"
+      drops: { food: 200, oil: 150, bones: 100 }
+      temperament: "neutral"
+      rarity: "rare"
+      pack_size: "3-8"
+    - id: fa020
+      name: "Kraken"
+      biome: "ocean"
+      role: "mythic_predator"
+      drops: { artifacts: 5, tentacle: 50 }
+      temperament: "aggressive"
+      rarity: "legendary"
+      pack_size: "1"
+    - id: fa021
+      name: "Leviathan"
+      biome: "abyssal_rift"
+      role: "cosmic_entity"
+      drops: { artifacts: 10, dark_matter: 5, essence: 25 }
+      temperament: "unknowable"
+      rarity: "mythic"
+      pack_size: "1"
+    - id: fa022
+      name: "Shark"
+      biome: "ocean"
+      role: "predator"
+      drops: { food: 40, teeth: 15 }
+      temperament: "aggressive"
+      rarity: "uncommon"
+      pack_size: "1-5"
+  
+  mythic:
+    - id: fa023
+      name: "Dragon"
+      biome: "mountain"
+      role: "legendary_guardian"
+      drops: { scales: 100, essence: 75, treasure_hoard: 500 }
+      temperament: "ancient_wisdom"
+      rarity: "legendary"
+      pack_size: "1"
+    - id: fa024
+      name: "Unicorn"
+      biome: "enchanted_forest"
+      role: "pure_spirit"
+      drops: { horn: 50, essence: 40 }
+      temperament: "benevolent"
+      rarity: "legendary"
+      pack_size: "1-3"
+    - id: fa025
+      name: "Chimera"
+      biome: "wasteland"
+      role: "chaos_beast"
+      drops: { mixed_parts: 75, chaos_essence: 30 }
+      temperament: "unpredictable"
+      rarity: "legendary"
+      pack_size: "1"
+    - id: fa026
+      name: "Temporal Serpent"
+      biome: "chrono_nexus"
+      role: "time_guardian"
+      drops: { chronoshards: 25, time_scales: 50 }
+      temperament: "enigmatic"
+      rarity: "mythic"
+      pack_size: "1-2"
+    - id: fa027
+      name: "Cosmic Entity"
+      biome: "void"
+      role: "reality_weaver"
+      drops: { essence: 100, eternity_fragments: 10, universal_truth: 1 }
+      temperament: "beyond_comprehension"
+      rarity: "ascended"
+      pack_size: "?"
+
+behaviors:
+  - "wander"
+  - "forage"
+  - "flee_predator"
+  - "migrate"
+  - "reproduce"
+  - "hunt"
+  - "defend_territory"
+  - "guard_treasure"
+  - "follow_player"
+  - "assist_gathering"
+  - "time_travel"
+  - "phase_shift"
+
+interaction_matrix:
+  predator_prey:
+    Wolf: ["Boar", "Horse"]
+    DireWolf: ["Mammoth", "Auroch"]
+    SaberCat: ["Horse", "GiantSloth"]
+    Tiger: ["Bull", "Elephant"]
+    Kraken: ["Whale", "Dolphin"]
+    Dragon: ["all_land"]
+    Leviathan: ["all"]
+  
+  symbiotic:
+    Raven: ["Wolf", "DireWolf"]
+    Dolphin: ["Human_ships"]
+    Phoenix: ["Player"]
+  
+  territorial_conflicts:
+    CaveBear: ["Wolf", "SaberCat"]
+    Dragon: ["Phoenix", "Chimera"]
+
+domestication:
+  easy: ["Horse", "Bull", "Dog"]
+  medium: ["Elephant", "Auroch"]
+  hard: ["Phoenix", "Unicorn"]
+  impossible: ["Dragon", "Kraken", "Leviathan"]
+
+spawn_rates:
+  by_era:
+    fire: 1.0
+    stone: 1.2
+    bronze: 0.8
+    iron: 0.6
+    industrial: 0.3
+    digital: 0.1
+    quantum: 0.05
+    ascension: 0.01
+  by_rarity:
+    common: 0.7
+    uncommon: 0.2
+    rare: 0.08
+    legendary: 0.015
+    mythic: 0.004
+    ascended: 0.001

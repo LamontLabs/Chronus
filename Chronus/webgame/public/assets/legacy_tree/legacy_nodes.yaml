@@ -1,0 +1,26 @@
+meta:
+  build_hash: ""
+  version: "v0.1-alpha"
+  date: "2025-10-27"
+
+branches:
+  efficiency:
+    description: "Improves all base production"
+    bonuses: [ "yield +5%", "cost -2%" ]
+  automation:
+    description: "Reduces manual grind and idle decay"
+    bonuses: [ "idle_gain +10%", "offline_cap +2h" ]
+  expansion:
+    description: "Unlocks new map zones and biomes"
+    bonuses: [ "zone +1", "biome diversity +1" ]
+  culture:
+    description: "Boosts morale and event frequency"
+    bonuses: [ "morale +5%", "event_rate +10%" ]
+  entropy:
+    description: "Enhances randomness and paradox recovery"
+    bonuses: [ "random_event_rate +20%", "fail_safe +1" ]
+
+prestige:
+  reset_effect: "Multiply all production by 1.5 per prestige"
+  reward: "Talent Points"
+  formula: "prestige_bonus = 1.5 ^ prestige_count"

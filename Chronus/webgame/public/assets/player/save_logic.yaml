@@ -1,0 +1,27 @@
+meta:
+  build_hash: ""
+  version: "v0.1-alpha"
+  date: "2025-10-27"
+
+save_cycle:
+  active_interval_s: 60
+  idle_interval_s: 300
+  slots: 3
+  checksum: "crc32"
+
+state_keys:
+  - resources
+  - buildings
+  - automation
+  - legacy
+  - moral_vector
+  - era
+  - timestamp
+
+integrity:
+  sign: "ed25519"
+  on_fail: "rollback_last_good"
+
+offline_progress:
+  cap_hours: 12
+  formula: "rate * hours * 0.9"

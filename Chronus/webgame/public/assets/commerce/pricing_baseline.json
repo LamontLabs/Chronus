@@ -1,0 +1,14 @@
+{
+  "meta": { "version": "v0.1-alpha", "date": "2025-10-28T06:05:41Z" },
+  "currency": "USD",
+  "baselines": [
+    { "sku": "premium_unlock",        "label": "Ad-free / Premium Unlock", "competitor_avg_usd": 4.99 },
+    { "sku": "voicepack_archive7_a",  "label": "Voice Pack A",             "competitor_avg_usd": 2.99 },
+    { "sku": "city_theme_bronze",     "label": "Cosmetic Theme",           "competitor_avg_usd": 2.99 },
+    { "sku": "idle_boost_4h",         "label": "Idle Doubler 4h",          "competitor_avg_usd": 1.99 },
+    { "sku": "token_pack_50",         "label": "Token Pack (50)",          "competitor_avg_usd": 4.99 },
+    { "sku": "era_expansion",         "label": "Era Expansion",            "competitor_avg_usd": 9.99 },
+    { "sku": "prestige_bundle",       "label": "Prestige Boost Bundle",    "competitor_avg_usd": 7.99 },
+    { "sku": "season_pass",           "label": "Seasonal Event Pass",      "competitor_avg_usd": 12.99 }
+  ]
+}

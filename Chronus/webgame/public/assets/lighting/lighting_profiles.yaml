@@ -1,0 +1,18 @@
+meta:
+  build_hash: ""
+  version: "v0.1-alpha"
+  date: "2025-10-27"
+
+profiles:
+  fire:        { ambient: 0.25, key: 0.9, bloom: 0.3, fog_density: 0.10 }
+  stone:       { ambient: 0.30, key: 0.85, bloom: 0.28, fog_density: 0.12 }
+  bronze:      { ambient: 0.32, key: 0.88, bloom: 0.30, fog_density: 0.12 }
+  iron:        { ambient: 0.35, key: 0.92, bloom: 0.32, fog_density: 0.14 }
+  industrial:  { ambient: 0.38, key: 0.95, bloom: 0.34, fog_density: 0.16 }
+  digital:     { ambient: 0.42, key: 0.98, bloom: 0.36, fog_density: 0.18 }
+  quantum:     { ambient: 0.50, key: 1.00, bloom: 0.40, fog_density: 0.20 }
+  ascension:   { ambient: 0.65, key: 0.80, bloom: 0.45, fog_density: 0.08 }
+
+chronolux:
+  equation: "luminance = base * log10(age+1) * (1 + empathy*0.1)"
+  base: 0.85

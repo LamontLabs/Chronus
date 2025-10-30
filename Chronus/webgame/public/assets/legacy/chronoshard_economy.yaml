@@ -1,0 +1,30 @@
+meta:
+  build_hash: ""
+  version: "v0.1-alpha"
+  date: "2025-10-27"
+
+chronoshards:
+  generation_sources:
+    - prestige
+    - relic_discovery
+    - event_reward
+    - achievement_bonus
+  formulae:
+    base_yield: "log10(total_production) * 2"
+    prestige_bonus: "1.5 ** prestige_count"
+    event_multiplier: "1 + (event_tier * 0.25)"
+  exchange:
+    - id: "legacy_boost"
+      cost: 10
+      reward: { global_yield_pct: 5 }
+    - id: "offline_extension"
+      cost: 15
+      reward: { offline_cap_hours: 2 }
+    - id: "relic_forge"
+      cost: 25
+      reward: { random_relic: true }
+
+display:
+  symbol: "💠"
+  color: "#7E57C2"
+  sound: "audio/ui/chronoshard_gain.ogg"

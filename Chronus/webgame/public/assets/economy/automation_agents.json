@@ -1,0 +1,60 @@
+{
+  "meta": { "build_hash": "", "version": "v0.1-alpha", "date": "2025-10-27" },
+  "agents": [
+    {
+      "id": "worker_i",
+      "tier": 1,
+      "label": "Worker",
+      "multiplier": 1.0,
+      "max_level": 10,
+      "unlock": { "tech": "automation_i" },
+      "cost": { "energy": 500 },
+      "loop": ["collect", "deposit", "upgrade", "log"]
+    },
+    {
+      "id": "drone_ii",
+      "tier": 2,
+      "label": "Drone",
+      "multiplier": 1.2,
+      "max_level": 10,
+      "unlock": { "era": "industrial" },
+      "cost": { "energy": 1000, "metal": 250 },
+      "loop": ["collect", "deposit", "upgrade", "log"]
+    },
+    {
+      "id": "ai_node_iii",
+      "tier": 3,
+      "label": "AI Node",
+      "multiplier": 1.5,
+      "max_level": 10,
+      "unlock": { "era": "digital" },
+      "cost": { "energy": 2500, "knowledge": 500 },
+      "loop": ["collect", "deposit", "upgrade", "log"]
+    },
+    {
+      "id": "quantum_engine_iv",
+      "tier": 4,
+      "label": "Quantum Engine",
+      "multiplier": 1.8,
+      "max_level": 10,
+      "unlock": { "era": "quantum" },
+      "cost": { "energy": 5000, "artifacts": 1 },
+      "loop": ["collect", "deposit", "upgrade", "log"]
+    },
+    {
+      "id": "omniframe_v",
+      "tier": 5,
+      "label": "Omniframe",
+      "multiplier": 2.0,
+      "max_level": 10,
+      "unlock": { "era": "ascension" },
+      "cost": { "energy": 10000, "chronoshards": 10 },
+      "loop": ["collect", "deposit", "upgrade", "log"]
+    }
+  ],
+  "formulas": {
+    "level_bonus": "1 + 0.1 * level",
+    "diminishing": "1 - 0.05 * (level - 1)",
+    "final_output": "base * multiplier * level_bonus * diminishing"
+  }
+}

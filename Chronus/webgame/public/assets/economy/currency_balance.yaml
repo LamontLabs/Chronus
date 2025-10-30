@@ -1,0 +1,44 @@
+meta:
+  build_hash: ""
+  version: "v0.1-alpha"
+  date: "2025-10-27"
+
+currencies:
+  soft:
+    - id: "energy"
+      role: "primary"
+      source: ["production_buildings", "offline_gain"]
+      color: "#FFEB3B"
+      symbol: "⚡"
+      cap: 999999999
+    - id: "food"
+      role: "secondary"
+      source: ["farms", "events"]
+      color: "#8BC34A"
+      symbol: "🌾"
+      cap: 99999999
+    - id: "metal"
+      role: "secondary"
+      source: ["mines", "automation"]
+      color: "#9E9E9E"
+      symbol: "⛏️"
+      cap: 99999999
+    - id: "knowledge"
+      role: "meta"
+      source: ["research", "AI nodes"]
+      color: "#03A9F4"
+      symbol: "🧠"
+      cap: 99999999
+  hard:
+    - id: "chronoshards"
+      role: "prestige_currency"
+      source: ["prestige", "achievements", "events"]
+      color: "#7E57C2"
+      symbol: "💠"
+      cap: 9999
+    - id: "credits"
+      role: "soft_monetary"
+      source: ["contracts", "events"]
+      color: "#FFD54F"
+      symbol: "💰"
+      cap: 9999999

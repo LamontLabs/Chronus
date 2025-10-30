@@ -1,0 +1,11 @@
+{
+  "meta": { "build_hash": "", "version": "v0.1-alpha", "date": "2025-10-27" },
+  "lines": [
+    { "trigger": "game_start", "text": "The cycle begins anew, architect." },
+    { "trigger": "prestige", "text": "A civilization ends, but your echo remains." },
+    { "trigger": "event_chronostorm", "text": "Time unravels—use the surge wisely." },
+    { "trigger": "relic_found", "text": "Another piece of eternity recovered." },
+    { "trigger": "idle_return", "text": "Centuries passed while you rested; progress awaits." },
+    { "trigger": "achievement_unlocked", "text": "Another milestone added to your legend." }
+  ]
+}

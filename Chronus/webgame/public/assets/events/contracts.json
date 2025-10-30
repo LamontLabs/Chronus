@@ -1,0 +1,29 @@
+{
+  "meta": { "build_hash": "", "version": "v0.1-alpha", "date": "2025-10-27" },
+  "contracts": [
+    {
+      "id": "c_food_rush",
+      "name": "Harvest Surge",
+      "duration_h": 24,
+      "requirements": { "food": 1000 },
+      "reward": { "credits": 250, "boost_pct": 10 },
+      "cooldown_h": 48
+    },
+    {
+      "id": "c_industrial_push",
+      "name": "Industrial Week",
+      "duration_h": 72,
+      "requirements": { "metal": 2000 },
+      "reward": { "upgrade_cost_pct": -20 },
+      "cooldown_h": 168
+    },
+    {
+      "id": "c_automation_jam",
+      "name": "Automation Jam",
+      "duration_h": 12,
+      "requirements": { "energy": 1500 },
+      "reward": { "cooldown_halved": true },
+      "cooldown_h": 72
+    }
+  ]
+}

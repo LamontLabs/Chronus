@@ -1,0 +1,19 @@
+{
+  "meta": { "build_hash": "", "version": "v0.1-alpha", "date": "2025-10-27" },
+  "formulas": {
+    "production_growth": "rate = base_rate * (1.25 ** tier)",
+    "upgrade_cost": "cost = base_cost * (1.45 ** level)",
+    "prestige_multiplier": "1.5 ** prestige_count",
+    "offline_yield": "rate * time_delta_hours * 0.9",
+    "era_unlock": "sum(automation_nodes) >= era_index * 100"
+  },
+  "soft_caps": {
+    "production_max": 1e9,
+    "offline_max_hours": 12,
+    "prestige_max_bonus": 1000
+  },
+  "balancing": {
+    "growth_damping": "1 / (1 + e^(-x/5))",
+    "reward_smoothing": "log10(production_total + 1)"
+  }
+}

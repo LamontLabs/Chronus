@@ -1,0 +1,262 @@
+meta:
+  build_hash: ""
+  version: "v0.2-expanded"
+  date: "2025-10-28"
+
+flora:
+  # Basic Resources (Common)
+  - id: pl001
+    name: "Glowfern"
+    biome: "forest"
+    function: "oxygen_source"
+    yield: { food: 2, energy: 1 }
+    growth_time_hours: 2
+    rarity: "common"
+    harvestable: true
+  - id: pl002
+    name: "Sunvine"
+    biome: "grassland"
+    function: "food_source"
+    yield: { food: 4 }
+    growth_time_hours: 1.5
+    rarity: "common"
+    harvestable: true
+  - id: pl003
+    name: "Wheat"
+    biome: "plains"
+    function: "staple_crop"
+    yield: { food: 6 }
+    growth_time_hours: 3
+    rarity: "common"
+    harvestable: true
+    requires: "irrigation"
+  - id: pl004
+    name: "Oak Tree"
+    biome: "forest"
+    function: "lumber"
+    yield: { wood: 20 }
+    growth_time_hours: 24
+    rarity: "common"
+    harvestable: true
+  - id: pl005
+    name: "Berry Bush"
+    biome: "forest"
+    function: "foraging"
+    yield: { food: 3 }
+    growth_time_hours: 1
+    rarity: "common"
+    harvestable: true
+  
+  # Specialized Plants (Uncommon)
+  - id: pl006
+    name: "Ironroot"
+    biome: "mountain"
+    function: "metal_source"
+    yield: { metal: 3, iron: 2 }
+    growth_time_hours: 8
+    rarity: "uncommon"
+    harvestable: true
+  - id: pl007
+    name: "Copperleaf"
+    biome: "hills"
+    function: "metal_accumulator"
+    yield: { copper: 5 }
+    growth_time_hours: 6
+    rarity: "uncommon"
+    harvestable: true
+  - id: pl008
+    name: "Cotton Plant"
+    biome: "plains"
+    function: "fiber_source"
+    yield: { cloth: 4 }
+    growth_time_hours: 4
+    rarity: "uncommon"
+    harvestable: true
+  - id: pl009
+    name: "Spice Bush"
+    biome: "tropical"
+    function: "trade_good"
+    yield: { spices: 3, culture: 1 }
+    growth_time_hours: 5
+    rarity: "uncommon"
+    harvestable: true
+  - id: pl010
+    name: "Healing Herb"
+    biome: "forest"
+    function: "medicine"
+    yield: { medicine: 2, morale: 1 }
+    growth_time_hours: 3
+    rarity: "uncommon"
+    harvestable: true
+  
+  # Advanced Plants (Rare)
+  - id: pl011
+    name: "Rubber Tree"
+    biome: "jungle"
+    function: "industrial_resource"
+    yield: { rubber: 8 }
+    growth_time_hours: 12
+    rarity: "rare"
+    harvestable: true
+  - id: pl012
+    name: "Oil Palm"
+    biome: "tropical"
+    function: "fuel_source"
+    yield: { oil: 5, food: 2 }
+    growth_time_hours: 10
+    rarity: "rare"
+    harvestable: true
+  - id: pl013
+    name: "Silkwood"
+    biome: "forest"
+    function: "luxury_fiber"
+    yield: { silk: 6, culture: 2 }
+    growth_time_hours: 15
+    rarity: "rare"
+    harvestable: true
+  - id: pl014
+    name: "Bamboo"
+    biome: "asian_forest"
+    function: "fast_construction"
+    yield: { wood: 10, food: 2 }
+    growth_time_hours: 0.5
+    rarity: "rare"
+    harvestable: true
+  - id: pl015
+    name: "Cacao Tree"
+    biome: "jungle"
+    function: "luxury_food"
+    yield: { luxury_food: 5, morale: 3 }
+    growth_time_hours: 18
+    rarity: "rare"
+    harvestable: true
+  
+  # Magical/Mystical Plants (Legendary)
+  - id: pl016
+    name: "Chronobloom"
+    biome: "quantum"
+    function: "temporal_stabilizer"
+    yield: { knowledge: 10, chronoshards: 1 }
+    growth_time_hours: 100
+    rarity: "legendary"
+    harvestable: true
+  - id: pl017
+    name: "Starflower"
+    biome: "celestial"
+    function: "essence_source"
+    yield: { essence: 15, eternity_fragments: 2 }
+    growth_time_hours: 168
+    rarity: "legendary"
+    harvestable: true
+  - id: pl018
+    name: "Mandrake"
+    biome: "enchanted_forest"
+    function: "alchemy"
+    yield: { magic_essence: 8, knowledge: 5 }
+    growth_time_hours: 48
+    rarity: "legendary"
+    harvestable: true
+    requires: "moonlight"
+  - id: pl019
+    name: "Phoenix Lotus"
+    biome: "volcanic"
+    function: "resurrection_source"
+    yield: { rebirth_essence: 5, artifacts: 1 }
+    growth_time_hours: 72
+    rarity: "legendary"
+    harvestable: true
+  - id: pl020
+    name: "World Tree Sapling"
+    biome: "ascension"
+    function: "cosmic_connection"
+    yield: { all_resources: 1, essence: 25 }
+    growth_time_hours: 1000
+    rarity: "mythic"
+    harvestable: false
+  
+  # Tech-Enhanced Plants
+  - id: pl021
+    name: "Genetically Modified Corn"
+    biome: "agricultural_zone"
+    function: "high_yield_crop"
+    yield: { food: 20 }
+    growth_time_hours: 2
+    rarity: "uncommon"
+    harvestable: true
+    requires: "biotech"
+  - id: pl022
+    name: "Bioluminescent Algae"
+    biome: "water"
+    function: "energy_producer"
+    yield: { energy: 6, oil: 3 }
+    growth_time_hours: 0.25
+    rarity: "uncommon"
+    harvestable: true
+    requires: "biotech"
+  - id: pl023
+    name: "Nano-Grass"
+    biome: "facility"
+    function: "air_purifier"
+    yield: { data: 4, morale: 2 }
+    growth_time_hours: 0.1
+    rarity: "rare"
+    harvestable: false
+    requires: "nanotech"
+  - id: pl024
+    name: "Crystal Vine"
+    biome: "quantum"
+    function: "data_storage"
+    yield: { data: 10, quantum_bits: 3 }
+    growth_time_hours: 20
+    rarity: "rare"
+    harvestable: true
+    requires: "quantum_cultivation"
+  - id: pl025
+    name: "Antimatter Moss"
+    biome: "void"
+    function: "exotic_energy"
+    yield: { antimatter: 2, energy: 50 }
+    growth_time_hours: 50
+    rarity: "legendary"
+    harvestable: true
+    requires: "void_containment"
+
+growth_equations:
+  base: "growth_rate = light * water * soil_quality * (1 + tech_bonus)"
+  temporal: "growth_rate *= (1 + time_flow_factor)"
+  seasonal: "yield *= seasonal_modifier[current_season]"
+  cultivation: "yield *= (1 + farming_skill * 0.1)"
+  
+  seasons:
+    spring: 1.2
+    summer: 1.0
+    autumn: 1.1
+    winter: 0.5
+  
+  tech_bonuses:
+    irrigation: 0.3
+    fertilizer: 0.4
+    greenhouses: 0.6
+    hydroponics: 1.0
+    biotech: 2.0
+    nanotech: 5.0
+    quantum_cultivation: 10.0
+
+cultivation_requirements:
+  water: "base * 1.0"
+  light: "varies_by_species"
+  soil_quality: "0-100_scale"
+  temperature: "species_specific_range"
+  
+pollination:
+  wind: ["Wheat", "Corn", "Bamboo"]
+  insects: ["Berry Bush", "Sunvine", "Spice Bush"]
+  birds: ["Oak Tree", "Cacao Tree"]
+  mystical: ["Chronobloom", "Starflower", "Phoenix Lotus"]
+
+special_conditions:
+  moonlight_required: ["Mandrake"]
+  volcanic_soil_only: ["Phoenix Lotus"]
+  quantum_fluctuations_needed: ["Chronobloom", "Crystal Vine"]
+  void_exposure: ["Antimatter Moss"]
+  celestial_alignment: ["Starflower", "World Tree Sapling"]

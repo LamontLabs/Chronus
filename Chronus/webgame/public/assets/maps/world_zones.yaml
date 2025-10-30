@@ -1,0 +1,345 @@
+meta:
+  build_hash: ""
+  version: "v0.2-expanded"
+  date: "2025-10-28"
+
+zones:
+  # Fire Age Zones (1-5)
+  - id: "zone_1"
+    name: "Origin Valley"
+    era: "fire"
+    size_tiles: 64
+    biomes: ["plains", "forest"]
+    unlock_cost: { food: 0 }
+    dangers: ["wolves"]
+    treasures: ["wood", "stone"]
+    description: "Where humanity first kindled civilization's flame."
+  - id: "zone_2"
+    name: "Ember Fields"
+    era: "fire"
+    size_tiles: 72
+    biomes: ["grassland", "hills"]
+    unlock_cost: { food: 200, wood: 150 }
+    dangers: ["wildfires"]
+    treasures: ["hide", "food"]
+    description: "Rolling grasslands where the hunt provides."
+  - id: "zone_3"
+    name: "Ancient Grove"
+    era: "fire"
+    size_tiles: 80
+    biomes: ["dense_forest"]
+    unlock_cost: { food: 400, stone: 300 }
+    dangers: ["bears", "snakes"]
+    treasures: ["rare_wood", "herbs"]
+    description: "Primordial forest teeming with life and mystery."
+  - id: "zone_4"
+    name: "Flintstone Quarry"
+    era: "fire"
+    size_tiles: 68
+    biomes: ["rocky_hills"]
+    unlock_cost: { stone: 250, food: 200 }
+    dangers: ["rockslides"]
+    treasures: ["flint", "tools"]
+    description: "Sharp stones for sharper minds."
+  - id: "zone_5"
+    name: "Sacred Cave"
+    era: "fire"
+    size_tiles: 76
+    biomes: ["cavern"]
+    unlock_cost: { food: 300, hide: 150 }
+    dangers: ["darkness", "spirits"]
+    treasures: ["cave_paintings", "faith"]
+    description: "Where ancestors speak through stone."
+    
+  # Stone Age Zones (6-10)
+  - id: "zone_6"
+    name: "Granite Peaks"
+    era: "stone"
+    size_tiles: 88
+    biomes: ["mountain", "snow"]
+    unlock_cost: { stone: 500, food: 300 }
+    dangers: ["avalanches", "cold"]
+    treasures: ["granite", "gems"]
+    description: "Towering monuments to stone's eternal strength."
+  - id: "zone_7"
+    name: "Limestone Caves"
+    era: "stone"
+    size_tiles: 96
+    biomes: ["underground", "cavern"]
+    unlock_cost: { stone: 800, clay: 400 }
+    dangers: ["cave_ins", "bats"]
+    treasures: ["clay", "crystals"]
+    description: "Hollow veins beneath the earth."
+  - id: "zone_8"
+    name: "Stone Circle Plains"
+    era: "stone"
+    size_tiles: 104
+    biomes: ["plains", "sacred"]
+    unlock_cost: { stone: 1200, faith: 200 }
+    dangers: ["spirits"]
+    treasures: ["artifacts", "knowledge"]
+    description: "Monoliths mark the path to understanding."
+  - id: "zone_9"
+    name: "Clay River Delta"
+    era: "stone"
+    size_tiles: 92
+    biomes: ["wetland", "river"]
+    unlock_cost: { clay: 600, food: 400 }
+    dangers: ["floods", "disease"]
+    treasures: ["clay", "fish"]
+    description: "Where water shapes possibility."
+  - id: "zone_10"
+    name: "Megalith Forest"
+    era: "stone"
+    size_tiles: 100
+    biomes: ["forest", "ancient"]
+    unlock_cost: { stone: 1000, wood: 800 }
+    dangers: ["wild_beasts"]
+    treasures: ["old_growth", "totems"]
+    description: "Trees and stones stand as one."
+    
+  # Bronze Age Zones (11-15)
+  - id: "zone_11"
+    name: "Copper Canyon"
+    era: "bronze"
+    size_tiles: 112
+    biomes: ["canyon", "desert"]
+    unlock_cost: { metal: 500, food: 600 }
+    dangers: ["scorpions", "heat"]
+    treasures: ["copper", "tin"]
+    description: "Red-streaked walls reveal civilization's alloy."
+  - id: "zone_12"
+    name: "Trade Wind Shores"
+    era: "bronze"
+    size_tiles: 120
+    biomes: ["coastal", "beach"]
+    unlock_cost: { bronze: 300, salt: 200 }
+    dangers: ["pirates", "storms"]
+    treasures: ["salt", "pearls", "fish"]
+    description: "Where ships carry culture across waves."
+  - id: "zone_13"
+    name: "Temple Highlands"
+    era: "bronze"
+    size_tiles: 128
+    biomes: ["hills", "ruins"]
+    unlock_cost: { bronze: 600, faith: 400 }
+    dangers: ["guardians"]
+    treasures: ["relics", "scrolls"]
+    description: "Gods watch from gilded heights."
+  - id: "zone_14"
+    name: "Merchant Crossroads"
+    era: "bronze"
+    size_tiles: 136
+    biomes: ["plains", "oasis"]
+    unlock_cost: { culture: 300, bronze: 400 }
+    dangers: ["bandits"]
+    treasures: ["trade_goods", "influence"]
+    description: "All roads meet where wealth flows."
+  - id: "zone_15"
+    name: "Tin Islands"
+    era: "bronze"
+    size_tiles: 108
+    biomes: ["island", "sea"]
+    unlock_cost: { bronze: 500, salt: 300 }
+    dangers: ["storms"]
+    treasures: ["tin", "exotic_goods"]
+    description: "Distant shores hold bronze's secret."
+    
+  # Iron Age Zones (16-20)
+  - id: "zone_16"
+    name: "Iron Cliffs"
+    era: "iron"
+    size_tiles: 144
+    biomes: ["mountain"]
+    unlock_cost: { metal: 1000, coal: 500 }
+    dangers: ["rockslides"]
+    treasures: ["iron", "coal"]
+    description: "Black stone fuels an age of metal."
+  - id: "zone_17"
+    name: "Forgefire Valley"
+    era: "iron"
+    size_tiles: 152
+    biomes: ["volcanic", "wasteland"]
+    unlock_cost: { iron: 800, energy: 400 }
+    dangers: ["lava", "fumes"]
+    treasures: ["steel", "gems"]
+    description: "Where earth's fury tempers steel."
+  - id: "zone_18"
+    name: "Glasswork Dunes"
+    era: "iron"
+    size_tiles: 160
+    biomes: ["desert", "glass_fields"]
+    unlock_cost: { glass: 500, iron: 600 }
+    dangers: ["sandstorms", "mirages"]
+    treasures: ["glass", "rare_sand"]
+    description: "Lightning struck sand reveals clarity."
+  - id: "zone_19"
+    name: "Conquered Territories"
+    era: "iron"
+    size_tiles: 168
+    biomes: ["plains", "fortified"]
+    unlock_cost: { steel: 700, influence: 500 }
+    dangers: ["resistance"]
+    treasures: ["tribute", "subjects"]
+    description: "Empire expands on iron roads."
+  - id: "zone_20"
+    name: "Library of Ages"
+    era: "iron"
+    size_tiles: 176
+    biomes: ["urban", "scholarly"]
+    unlock_cost: { knowledge: 800, culture: 600 }
+    dangers: ["fire"]
+    treasures: ["ancient_texts", "inventions"]
+    description: "Scrolls preserve all that was and will be."
+    
+  # Industrial Age Zones (21-25)
+  - id: "zone_21"
+    name: "Coal Mine Expanse"
+    era: "industrial"
+    size_tiles: 184
+    biomes: ["industrial", "mining"]
+    unlock_cost: { coal: 2000, steel: 1500 }
+    dangers: ["gas", "collapse"]
+    treasures: ["coal", "oil"]
+    description: "Black gold powers the machine age."
+  - id: "zone_22"
+    name: "Factory District"
+    era: "industrial"
+    size_tiles: 192
+    biomes: ["urban", "industrial"]
+    unlock_cost: { energy: 1500, steel: 1000 }
+    dangers: ["pollution", "accidents"]
+    treasures: ["machinery", "patents"]
+    description: "Smoke stacks reach for progress."
+  - id: "zone_23"
+    name: "Railroad Frontier"
+    era: "industrial"
+    size_tiles: 200
+    biomes: ["plains", "developed"]
+    unlock_cost: { steel: 2500, rubber: 800 }
+    dangers: ["bandits", "derailment"]
+    treasures: ["expansion", "commerce"]
+    description: "Steel rails conquer distance."
+  - id: "zone_24"
+    name: "Oil Fields"
+    era: "industrial"
+    size_tiles: 208
+    biomes: ["wasteland", "oil_rich"]
+    unlock_cost: { oil: 1000, energy: 1200 }
+    dangers: ["fires", "sabotage"]
+    treasures: ["oil", "natural_gas"]
+    description: "Black rivers fuel tomorrow."
+  - id: "zone_25"
+    name: "Scientific Institute"
+    era: "industrial"
+    size_tiles: 216
+    biomes: ["urban", "academic"]
+    unlock_cost: { knowledge: 2000, electricity: 1500 }
+    dangers: ["experiments_gone_wrong"]
+    treasures: ["discoveries", "prototypes"]
+    description: "Reason illuminates the dark."
+    
+  # Digital Age Zones (26-28)
+  - id: "zone_26"
+    name: "Silicon Valley"
+    era: "digital"
+    size_tiles: 224
+    biomes: ["urban", "tech_hub"]
+    unlock_cost: { silicon: 1000, data: 2000 }
+    dangers: ["cyber_attacks"]
+    treasures: ["semiconductors", "data"]
+    description: "Where thought becomes electric."
+  - id: "zone_27"
+    name: "Server Farms"
+    era: "digital"
+    size_tiles: 232
+    biomes: ["facility", "networked"]
+    unlock_cost: { electricity: 3000, data: 2500 }
+    dangers: ["overheating", "hacks"]
+    treasures: ["processing_power", "ai"]
+    description: "Digital minds dream in silicon."
+  - id: "zone_28"
+    name: "Space Launch Complex"
+    era: "digital"
+    size_tiles: 240
+    biomes: ["facility", "coastal"]
+    unlock_cost: { rare_earth: 800, knowledge: 3000 }
+    dangers: ["rocket_failures"]
+    treasures: ["satellites", "space_access"]
+    description: "Humanity touches the stars."
+    
+  # Quantum Age Zones (29-31)
+  - id: "zone_29"
+    name: "Sands of Eternity"
+    era: "quantum"
+    size_tiles: 248
+    biomes: ["desert", "temporal"]
+    unlock_cost: { quantum_bits: 500, nanomaterials: 1000 }
+    dangers: ["time_distortions"]
+    treasures: ["chronoshards", "paradox_crystals"]
+    description: "Where time flows like sand."
+  - id: "zone_30"
+    name: "Abyssal Rift"
+    era: "quantum"
+    size_tiles: 256
+    biomes: ["ocean", "deep"]
+    unlock_cost: { dark_matter: 300, antimatter: 500 }
+    dangers: ["void_pressure"]
+    treasures: ["exotic_matter", "deep_secrets"]
+    description: "Darkness deeper than space itself."
+  - id: "zone_31"
+    name: "Chrono Nexus"
+    era: "quantum"
+    size_tiles: 280
+    biomes: ["quantum", "timeless"]
+    unlock_cost: { chronoshards: 100, fusion_cores: 500 }
+    dangers: ["causality_breaks"]
+    treasures: ["eternity_fragments", "reality_shards"]
+    description: "All moments converge as one."
+    
+  # Ascension Zones (32-35)
+  - id: "zone_32"
+    name: "Celestial Gateway"
+    era: "ascension"
+    size_tiles: 320
+    biomes: ["ethereal", "cosmic"]
+    unlock_cost: { essence: 1000, eternity_fragments: 500 }
+    dangers: ["cosmic_entities"]
+    treasures: ["celestial_ore", "divine_power"]
+    description: "The threshold between mortal and eternal."
+  - id: "zone_33"
+    name: "Infinity Spiral"
+    era: "ascension"
+    size_tiles: 400
+    biomes: ["void", "infinite"]
+    unlock_cost: { celestial_ore: 500, essence: 2000 }
+    dangers: ["entropy", "void_creatures"]
+    treasures: ["ultimate_knowledge", "ascension_keys"]
+    description: "Forever folds upon itself."
+  - id: "zone_34"
+    name: "Cosmic Forge"
+    era: "ascension"
+    size_tiles: 360
+    biomes: ["stellar", "creation"]
+    unlock_cost: { essence: 1500, celestial_ore: 800 }
+    dangers: ["stellar_radiation"]
+    treasures: ["star_metal", "creation_sparks"]
+    description: "Where reality is shaped by will."
+  - id: "zone_35"
+    name: "Eternal Archives"
+    era: "ascension"
+    size_tiles: 500
+    biomes: ["ethereal", "timeless"]
+    unlock_cost: { eternity_fragments: 1000, essence: 3000 }
+    dangers: ["memory_overload"]
+    treasures: ["all_knowledge", "universal_truth"]
+    description: "Every thought ever thought, preserved."
+
+visual_effects:
+  unlock_flash_ms: 400
+  reveal_particles: true
+  camera_pan_speed: 0.8
+  zone_transition: "fade"
+  danger_indicator: "pulse_red"
+  treasure_glow: "golden_shimmer"
+  era_transition_effect: "cosmic_ripple"

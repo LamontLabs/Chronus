@@ -1,0 +1,13 @@
+{
+  "meta": { "build_hash": "", "version": "v0.1-alpha", "date": "2025-10-27" },
+  "schema": {
+    "player_id": "string",
+    "created_at": "iso8601",
+    "preferences": {
+      "audio": { "music": "number", "sfx": "number", "voice": "number" },
+      "graphics": { "quality": "string", "particles": "number", "contrast": "string" },
+      "accessibility": { "text_scale": "number", "color_mode": "string", "narration": "bool" }
+    },
+    "flags": { "premium": "bool", "telemetry_opt_in": "bool" }
+  }
+}

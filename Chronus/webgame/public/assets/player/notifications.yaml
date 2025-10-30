@@ -1,0 +1,18 @@
+meta:
+  build_hash: ""
+  version: "v0.1-alpha"
+  date: "2025-10-27"
+
+types:
+  resource_gain:  { ui: "toast", duration_s: 1, sound: "tap" }
+  event_start:    { ui: "banner", duration_s: 3, sound: "event_trigger" }
+  achievement:    { ui: "modal", duration_s: 4, sound: "achievement" }
+  offline_return: { ui: "panel", sticky: true, sound: "upgrade" }
+  prestige_ready: { ui: "badge", sticky: true }
+
+push:
+  enabled: true
+  max_per_day: 1
+  templates:
+    - "Your civilization crossed a millennium. Claim your legacy."
+    - "Chronostorm surge is active. Production rising."

@@ -1,0 +1,301 @@
+meta:
+  build_hash: ""
+  version: "v0.2-expanded"
+  date: "2025-10-28"
+
+resources:
+  # Tier 1: Primitive Resources (Fire Age)
+  - id: wood
+    name: "Wood"
+    tier: 1
+    base_rate: 0.05
+    entropy_decay: 0.00
+    uses: ["tools", "buildings", "fuel"]
+    icon: "🪵"
+  - id: stone
+    name: "Stone"
+    tier: 1
+    base_rate: 0.05
+    entropy_decay: 0.00
+    uses: ["tools", "buildings", "foundations"]
+    icon: "🪨"
+  - id: food
+    name: "Food"
+    tier: 1
+    base_rate: 0.05
+    entropy_decay: 0.00
+    uses: ["population", "morale"]
+    icon: "🌾"
+  - id: hide
+    name: "Hide"
+    tier: 1
+    base_rate: 0.03
+    entropy_decay: 0.00
+    uses: ["clothing", "shelter", "trade"]
+    icon: "🦌"
+  - id: clay
+    name: "Clay"
+    tier: 1
+    base_rate: 0.04
+    entropy_decay: 0.00
+    uses: ["pottery", "construction", "art"]
+    icon: "🏺"
+    
+  # Tier 2: Bronze Age Resources
+  - id: metal
+    name: "Metal Ore"
+    tier: 2
+    base_rate: 0.02
+    entropy_decay: 0.00
+    uses: ["alloy", "machines", "weapons"]
+    icon: "⛏️"
+  - id: copper
+    name: "Copper"
+    tier: 2
+    base_rate: 0.025
+    entropy_decay: 0.00
+    uses: ["bronze", "tools", "decoration"]
+    icon: "🔶"
+  - id: tin
+    name: "Tin"
+    tier: 2
+    base_rate: 0.02
+    entropy_decay: 0.00
+    uses: ["bronze", "alloys"]
+    icon: "🔷"
+  - id: bronze
+    name: "Bronze"
+    tier: 2
+    base_rate: 0.015
+    entropy_decay: 0.00
+    uses: ["weapons", "tools", "armor"]
+    icon: "🥉"
+  - id: salt
+    name: "Salt"
+    tier: 2
+    base_rate: 0.03
+    entropy_decay: 0.00
+    uses: ["preservation", "trade", "currency"]
+    icon: "🧂"
+    
+  # Tier 3: Iron Age Resources
+  - id: iron
+    name: "Iron"
+    tier: 3
+    base_rate: 0.018
+    entropy_decay: 0.00
+    uses: ["steel", "construction", "weapons"]
+    icon: "⚙️"
+  - id: coal
+    name: "Coal"
+    tier: 3
+    base_rate: 0.022
+    entropy_decay: 0.00
+    uses: ["fuel", "smelting", "energy"]
+    icon: "🪨"
+  - id: steel
+    name: "Steel"
+    tier: 3
+    base_rate: 0.012
+    entropy_decay: 0.00
+    uses: ["advanced_tools", "structures", "machinery"]
+    icon: "🔩"
+  - id: glass
+    name: "Glass"
+    tier: 3
+    base_rate: 0.015
+    entropy_decay: 0.00
+    uses: ["optics", "containers", "art"]
+    icon: "🔮"
+  - id: gems
+    name: "Gems"
+    tier: 3
+    base_rate: 0.008
+    entropy_decay: 0.00
+    uses: ["luxury", "optics", "trade"]
+    icon: "💎"
+    
+  # Tier 4: Industrial Resources
+  - id: energy
+    name: "Energy"
+    tier: 4
+    base_rate: 0.03
+    entropy_decay: 0.01
+    uses: ["automation", "processing", "power"]
+    icon: "⚡"
+  - id: oil
+    name: "Oil"
+    tier: 4
+    base_rate: 0.016
+    entropy_decay: 0.00
+    uses: ["fuel", "plastics", "chemicals"]
+    icon: "🛢️"
+  - id: rubber
+    name: "Rubber"
+    tier: 4
+    base_rate: 0.014
+    entropy_decay: 0.00
+    uses: ["machinery", "vehicles", "seals"]
+    icon: "⚫"
+  - id: plastic
+    name: "Plastic"
+    tier: 4
+    base_rate: 0.012
+    entropy_decay: 0.02
+    uses: ["containers", "components", "construction"]
+    icon: "🔴"
+  - id: electricity
+    name: "Electricity"
+    tier: 4
+    base_rate: 0.025
+    entropy_decay: 0.05
+    uses: ["power", "automation", "lighting"]
+    icon: "💡"
+    
+  # Tier 5: Digital Age Resources
+  - id: silicon
+    name: "Silicon"
+    tier: 5
+    base_rate: 0.01
+    entropy_decay: 0.00
+    uses: ["chips", "computers", "solar"]
+    icon: "🔷"
+  - id: data
+    name: "Data"
+    tier: 5
+    base_rate: 0.02
+    entropy_decay: 0.08
+    uses: ["ai", "research", "optimization"]
+    icon: "💾"
+  - id: semiconductors
+    name: "Semiconductors"
+    tier: 5
+    base_rate: 0.008
+    entropy_decay: 0.00
+    uses: ["electronics", "computers", "automation"]
+    icon: "🔌"
+  - id: rare_earth
+    name: "Rare Earth Elements"
+    tier: 5
+    base_rate: 0.006
+    entropy_decay: 0.00
+    uses: ["advanced_tech", "magnets", "batteries"]
+    icon: "🧲"
+  - id: knowledge
+    name: "Knowledge"
+    tier: 5
+    base_rate: 0.01
+    entropy_decay: 0.00
+    uses: ["research", "artifacts", "innovation"]
+    icon: "📚"
+    
+  # Tier 6: Quantum Age Resources
+  - id: nanomaterials
+    name: "Nanomaterials"
+    tier: 6
+    base_rate: 0.005
+    entropy_decay: 0.00
+    uses: ["quantum_tech", "medicine", "construction"]
+    icon: "🔬"
+  - id: antimatter
+    name: "Antimatter"
+    tier: 6
+    base_rate: 0.003
+    entropy_decay: 0.15
+    uses: ["power", "propulsion", "research"]
+    icon: "💥"
+  - id: quantum_bits
+    name: "Quantum Bits"
+    tier: 6
+    base_rate: 0.004
+    entropy_decay: 0.10
+    uses: ["computing", "encryption", "simulation"]
+    icon: "🔀"
+  - id: dark_matter
+    name: "Dark Matter"
+    tier: 6
+    base_rate: 0.002
+    entropy_decay: 0.00
+    uses: ["exotic_tech", "gravity_control"]
+    icon: "🌌"
+  - id: fusion_cores
+    name: "Fusion Cores"
+    tier: 6
+    base_rate: 0.006
+    entropy_decay: 0.05
+    uses: ["unlimited_power", "starships"]
+    icon: "☢️"
+    
+  # Tier 7: Meta Resources (Ascension)
+  - id: artifacts
+    name: "Artifacts"
+    tier: 7
+    base_rate: 0.001
+    entropy_decay: 0.00
+    uses: ["legacy", "relics", "prestige"]
+    icon: "🏛️"
+  - id: chronoshards
+    name: "Chronoshards"
+    tier: 7
+    base_rate: 0.0005
+    entropy_decay: 0.00
+    uses: ["meta_upgrades", "time_manipulation"]
+    icon: "💠"
+  - id: essence
+    name: "Essence"
+    tier: 7
+    base_rate: 0.0008
+    entropy_decay: 0.00
+    uses: ["ascension", "transcendence"]
+    icon: "✨"
+  - id: eternity_fragments
+    name: "Eternity Fragments"
+    tier: 7
+    base_rate: 0.0003
+    entropy_decay: 0.00
+    uses: ["cosmic_upgrades", "reality_shaping"]
+    icon: "🌠"
+  - id: celestial_ore
+    name: "Celestial Ore"
+    tier: 7
+    base_rate: 0.0004
+    entropy_decay: 0.00
+    uses: ["divine_structures", "relics"]
+    icon: "⭐"
+    
+  # Special Resources
+  - id: morale
+    name: "Morale"
+    tier: 0
+    base_rate: 0.01
+    entropy_decay: 0.03
+    uses: ["productivity", "population_growth"]
+    icon: "😊"
+  - id: culture
+    name: "Culture"
+    tier: 0
+    base_rate: 0.008
+    entropy_decay: 0.01
+    uses: ["influence", "expansion", "diplomacy"]
+    icon: "🎭"
+  - id: influence
+    name: "Influence"
+    tier: 0
+    base_rate: 0.006
+    entropy_decay: 0.02
+    uses: ["politics", "trade", "conquest"]
+    icon: "👑"
+  - id: faith
+    name: "Faith"
+    tier: 0
+    base_rate: 0.007
+    entropy_decay: 0.01
+    uses: ["temples", "unity", "miracles"]
+    icon: "🙏"
+
+formulas:
+  rate_next: "rate_t * (1 + efficiency_bonus - entropy_decay)"
+  offline_gain: "rate * hours * 0.9"
+  prestige_multiplier: "1.5 ** prestige_count"
+  tier_unlock: "previous_tier_total >= 1000"
+  synergy_bonus: "0.05 * matching_tier_resources"

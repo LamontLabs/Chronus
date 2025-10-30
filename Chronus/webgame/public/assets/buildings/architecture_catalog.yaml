@@ -1,0 +1,232 @@
+meta:
+  build_hash: ""
+  version: "v0.2-expanded"
+  date: "2025-10-28"
+
+categories:
+  # Resource Production Buildings
+  production:
+    color: "#9CCC65"
+    buildings:
+      - id: food_line
+        names: ["Forager Hut", "Farmstead", "Plantation", "Greenhouse", "Hydroponic Dome", "Biosynth Farm", "Quantum Seeder"]
+        output: "food"
+        upgrade_cost_mult: 1.4
+        base_production: [1, 5, 25, 125, 625, 3125, 15625]
+      - id: wood_line
+        names: ["Lumber Camp", "Sawmill", "Tree Farm", "Industrial Logger", "Nanoforest Harvester", "Molecular Assembler", "Photosynth Reactor"]
+        output: "wood"
+        upgrade_cost_mult: 1.4
+        base_production: [1, 5, 25, 125, 625, 3125, 15625]
+      - id: stone_line
+        names: ["Quarry", "Stone Cutter", "Rock Crusher", "Automated Mine", "Molecular Extractor", "Matter Synthesizer", "Quantum Quarry"]
+        output: "stone"
+        upgrade_cost_mult: 1.4
+        base_production: [1, 5, 25, 125, 625, 3125, 15625]
+      - id: metal_line
+        names: ["Mine", "Smelter", "Alloy Forge", "Steel Mill", "Molecular Extractor", "Atomic Refinery", "Exotic Matter Forge"]
+        output: "metal"
+        upgrade_cost_mult: 1.4
+        base_production: [0.8, 4, 20, 100, 500, 2500, 12500]
+      - id: copper_line
+        names: ["Copper Mine", "Copper Refinery", "Copper Factory"]
+        output: "copper"
+        upgrade_cost_mult: 1.5
+        base_production: [0.5, 2.5, 12.5]
+      - id: bronze_line
+        names: ["Bronze Forge", "Bronze Foundry", "Bronze Works"]
+        output: "bronze"
+        upgrade_cost_mult: 1.6
+        base_production: [0.3, 1.5, 7.5]
+      - id: iron_line
+        names: ["Iron Mine", "Blast Furnace", "Steel Works", "Advanced Metallurgy Plant"]
+        output: "iron"
+        upgrade_cost_mult: 1.5
+        base_production: [0.6, 3, 15, 75]
+      - id: coal_line
+        names: ["Coal Mine", "Deep Coal Shaft", "Coal Processing Plant"]
+        output: "coal"
+        upgrade_cost_mult: 1.4
+        base_production: [0.8, 4, 20]
+      - id: oil_line
+        names: ["Oil Derrick", "Oil Refinery", "Petroleum Complex"]
+        output: "oil"
+        upgrade_cost_mult: 1.6
+        base_production: [0.4, 2, 10]
+  
+  # Processing & Advanced Production
+  processing:
+    color: "#26C6DA"
+    buildings:
+      - id: energy_line
+        names: ["Waterwheel", "Windmill", "Steam Engine", "Coal Plant", "Nuclear Reactor", "Fusion Core", "Quantum Dynamo", "Stellar Harvester"]
+        output: "energy"
+        upgrade_cost_mult: 1.5
+        base_production: [2, 10, 50, 250, 1250, 6250, 31250, 156250]
+      - id: knowledge_line
+        names: ["Scribe's Hut", "Library", "University", "Research Institute", "Data Center", "Knowledge Core", "Quantum Mind", "Singularity Vault"]
+        output: "knowledge"
+        upgrade_cost_mult: 1.6
+        base_production: [0.5, 2.5, 12.5, 62.5, 312.5, 1562.5, 7812.5, 39062.5]
+      - id: silicon_line
+        names: ["Sand Refinery", "Silicon Purifier", "Chip Fabricator"]
+        output: "silicon"
+        upgrade_cost_mult: 1.7
+        base_production: [0.2, 1, 5]
+      - id: nanomaterial_line
+        names: ["Nano Lab", "Molecular Assembler", "Quantum Fabricator"]
+        output: "nanomaterials"
+        upgrade_cost_mult: 2.0
+        base_production: [0.1, 0.5, 2.5]
+      - id: antimatter_line
+        names: ["Particle Collider", "Antimatter Reactor", "Void Harvester"]
+        output: "antimatter"
+        upgrade_cost_mult: 2.5
+        base_production: [0.05, 0.25, 1.25]
+  
+  # Utility & Support Buildings
+  utility:
+    color: "#42A5F5"
+    buildings:
+      - id: storage_line
+        names: ["Stockpile", "Warehouse", "Depot", "Distribution Center", "Hyperstore", "Dimensional Vault", "Quantum Storage", "Memory Vault"]
+        effect: "capacity_plus"
+        multiplier: [1.5, 2, 3, 5, 8, 12, 20, 35]
+      - id: housing_line
+        names: ["Tent", "Hut", "House", "Apartment", "Skyscraper", "Arcology", "Space Habitat"]
+        effect: "population_plus"
+        multiplier: [10, 50, 200, 1000, 5000, 25000, 125000]
+      - id: automation_line
+        names: ["Hand Tools", "Drone Bay", "Robot Factory", "Automation Spire", "Self-Manufacturing Tower", "Nano Swarm", "AI OmniCore"]
+        effect: "automation_plus"
+        multiplier: [0.05, 0.15, 0.30, 0.60, 1.2, 2.5, 5.0]
+      - id: transport_line
+        names: ["Dirt Road", "Stone Road", "Railroad", "Highway", "Maglev", "Teleporter"]
+        effect: "resource_flow_plus"
+        multiplier: [0.10, 0.25, 0.50, 1.0, 2.0, 5.0]
+  
+  # Cultural & Social Buildings
+  culture:
+    color: "#FFB74D"
+    buildings:
+      - id: heritage_line
+        names: ["Campfire", "Shrine", "Temple", "Theater", "Opera House", "Museum", "Cultural Center", "Archive of Eras"]
+        effect: "morale_plus"
+        multiplier: [0.05, 0.10, 0.20, 0.35, 0.55, 0.80, 1.2, 2.0]
+      - id: philosophy_line
+        names: ["Sacred Grove", "Temple of Echoes", "Academy", "Institute of Philosophy", "Neural Cathedral", "Thought Nexus", "Light Monastery"]
+        effect: "research_plus"
+        multiplier: [0.10, 0.20, 0.40, 0.70, 1.1, 1.6, 2.5]
+      - id: trade_line
+        names: ["Market Stall", "Bazaar", "Trade Post", "Stock Exchange", "Global Market", "Quantum Exchange"]
+        effect: "trade_efficiency_plus"
+        multiplier: [0.15, 0.30, 0.60, 1.2, 2.5, 5.0]
+      - id: faith_line
+        names: ["Altar", "Chapel", "Cathedral", "Holy Site", "Divine Nexus"]
+        effect: "faith_plus"
+        multiplier: [0.10, 0.25, 0.50, 1.0, 2.0]
+  
+  # Military & Defense
+  military:
+    color: "#E57373"
+    buildings:
+      - id: defense_line
+        names: ["Palisade", "Stone Wall", "Castle", "Fortress", "Missile Silo", "Shield Generator", "Temporal Barrier"]
+        effect: "defense_plus"
+        multiplier: [1, 3, 10, 30, 100, 300, 1000]
+      - id: barracks_line
+        names: ["Training Ground", "Barracks", "Military Academy", "War Factory", "Clone Facility", "Quantum Army"]
+        effect: "military_power_plus"
+        multiplier: [0.20, 0.50, 1.0, 2.0, 4.0, 8.0]
+  
+  # Monument & Prestige Buildings
+  monument:
+    color: "#FFF176"
+    buildings:
+      - id: wonder_fire
+        names: ["Eternal Flame"]
+        effect: "fire_age_bonus"
+        unique: true
+        bonus: { all_fire_resources: 0.50 }
+      - id: wonder_stone
+        names: ["Stonehenge"]
+        effect: "stone_age_bonus"
+        unique: true
+        bonus: { faith: 1.0, knowledge: 0.50 }
+      - id: wonder_bronze
+        names: ["Bronze Colossus"]
+        effect: "bronze_age_bonus"
+        unique: true
+        bonus: { culture: 1.0, influence: 0.75 }
+      - id: wonder_iron
+        names: ["Great Library"]
+        effect: "iron_age_bonus"
+        unique: true
+        bonus: { knowledge: 2.0, research_speed: 0.50 }
+      - id: wonder_industrial
+        names: ["World's Fair"]
+        effect: "industrial_bonus"
+        unique: true
+        bonus: { all_production: 0.75, morale: 0.50 }
+      - id: wonder_digital
+        names: ["Internet"]
+        effect: "digital_bonus"
+        unique: true
+        bonus: { data: 2.0, global_connectivity: 1.0 }
+      - id: wonder_quantum
+        names: ["Quantum Gate"]
+        effect: "quantum_bonus"
+        unique: true
+        bonus: { quantum_power: 3.0, time_manipulation: 1.0 }
+      - id: prestige_gate
+        names: ["Stone Obelisk", "Bronze Colossus", "Steel Monument", "Dyson Array", "Quantum Spire", "Celestial Gate", "Infinity Portal"]
+        effect: "prestige_trigger"
+        unlock_prestige: true
+
+  # Special & Unique Buildings
+  special:
+    color: "#BA68C8"
+    buildings:
+      - id: relic_vault
+        names: ["Relic Vault"]
+        effect: "relic_storage"
+        unique: true
+        capacity: 50
+      - id: time_lab
+        names: ["Temporal Laboratory"]
+        effect: "chronoshard_production"
+        unique: true
+        output: "chronoshards"
+        base_production: 0.001
+      - id: essence_condenser
+        names: ["Essence Condenser"]
+        effect: "essence_production"
+        unique: true
+        output: "essence"
+        base_production: 0.01
+      - id: world_tree
+        names: ["World Tree"]
+        effect: "all_production_massive"
+        unique: true
+        bonus: { all_resources: 1.0 }
+        requires: "ascension_age"
+
+visual_rules:
+  level_up:
+    scale_pulse: 1.05
+    shimmer_ms: 300
+  automation_unlock:
+    gear_rotation_deg_s: 120
+    hue_oscillation: true
+  era_shift:
+    dissolve_ms: 600
+    rebuild_ms: 600
+  prestige:
+    desaturate: true
+    whiteout_ms: 800
+  construction:
+    build_animation_ms: 1000
+    particle_effect: "construction_dust"
+  demolition:
+    destroy_animation_ms: 800
+    particle_effect: "debris"

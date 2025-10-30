@@ -1,0 +1,30 @@
+meta:
+  build_hash: ""
+  version: "v0.1-alpha"
+  date: "2025-10-27"
+
+breaks:
+  session_soft_pause_min: 90
+  ui_desaturate_after_min: 120
+  cooldowns:
+    achievement_repeat_min: 5
+    event_prompt_min: 30
+
+effects:
+  soft_pause:
+    action: "dim_ui_and_reduce_sfx"
+    sfx_db_delta: -6
+    message: "Reflection moment"
+  desaturate:
+    action: "apply_lut_desaturate"
+    strength: 0.25
+
+predictable_mode:
+  enabled: false
+  removes:
+    - "variable_event_timing"
+    - "random_bonus_variance"
+
+limits:
+  notifications_per_day_max: 1
+  ads_opt_in_cooldown_min: 30

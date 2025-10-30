@@ -1,0 +1,28 @@
+{
+  "meta": { "version": "v0.1-alpha", "date": "2025-10-27" },
+  "ui": {
+    "build": "Build",
+    "upgrade": "Upgrade",
+    "research": "Research",
+    "legacy": "Legacy",
+    "shop": "Shop",
+    "settings": "Settings",
+    "resume": "Resume",
+    "exit": "Exit"
+  },
+  "notifications": {
+    "prestige_ready": "Prestige cycle available.",
+    "automation_unlocked": "Automation unlocked!",
+    "new_era": "A new age dawns: {era_name}."
+  },
+  "dialog": {
+    "chronostorm": "The skies twist with time. Production surges.",
+    "relic_found": "A relic from an ancient era has been uncovered.",
+    "ascension": "Your civilization transcends the material plane."
+  },
+  "achievements": {
+    "first_build": "First Structure",
+    "automation": "Hands Free",
+    "prestige": "Cycle Begins"
+  }
+}

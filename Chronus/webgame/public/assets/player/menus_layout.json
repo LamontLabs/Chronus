@@ -1,0 +1,22 @@
+{
+  "meta": { "build_hash": "", "version": "v0.1-alpha", "date": "2025-10-27" },
+  "menus": {
+    "main": ["continue", "new_game", "settings", "credits"],
+    "dock": ["build", "upgrade", "research", "legacy", "shop"],
+    "overlays": ["events", "notifications", "chronicle", "pause"]
+  },
+  "buttons": {
+    "build": { "icon": "hammer", "hotkey": "B", "tooltip": "Construct buildings" },
+    "upgrade": { "icon": "arrow-up", "hotkey": "U", "tooltip": "Upgrade selected" },
+    "research": { "icon": "flask", "hotkey": "R", "tooltip": "Unlock technologies" },
+    "legacy": { "icon": "tree", "hotkey": "L", "tooltip": "Spend Chronoshards" },
+    "shop": { "icon": "store", "hotkey": "S", "tooltip": "Cosmetics and premium" }
+  },
+  "notifications": {
+    "resource_gain": { "duration_s": 1 },
+    "event_start": { "duration_s": 3 },
+    "achievement": { "duration_s": 4 },
+    "offline_progress": { "sticky": true },
+    "prestige_ready": { "badge": true }
+  }
+}

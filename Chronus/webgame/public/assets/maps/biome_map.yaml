@@ -1,0 +1,44 @@
+meta:
+  build_hash: ""
+  version: "v0.1-alpha"
+  date: "2025-10-27"
+
+biomes:
+  - id: "plains"
+    name: "Verdant Plains"
+    terrain: "grass"
+    yield_bonus: { food: 0.15 }
+    rarity: "common"
+    palette: ["#8BC34A", "#C5E1A5", "#558B2F"]
+  - id: "mountain"
+    name: "Ancient Peaks"
+    terrain: "rock"
+    yield_bonus: { metal: 0.20 }
+    rarity: "uncommon"
+    palette: ["#9E9E9E", "#607D8B", "#37474F"]
+  - id: "desert"
+    name: "Eternal Sands"
+    terrain: "sand"
+    yield_bonus: { energy: 0.10 }
+    rarity: "uncommon"
+    palette: ["#FFCC80", "#FFD54F", "#FFB300"]
+  - id: "ocean"
+    name: "Azure Expanse"
+    terrain: "water"
+    yield_bonus: { knowledge: 0.05 }
+    rarity: "common"
+    palette: ["#2196F3", "#03A9F4", "#B3E5FC"]
+  - id: "quantum"
+    name: "Temporal Rift"
+    terrain: "anomaly"
+    yield_bonus: { chronoshards: 1 }
+    rarity: "rare"
+    palette: ["#7E57C2", "#B388FF", "#311B92"]
+
+rules:
+  transition_blend_ms: 600
+  unlock_condition:
+    mountain: "era >= bronze"
+    desert: "era >= iron"
+    ocean: "era >= industrial"
+    quantum: "era >= quantum"

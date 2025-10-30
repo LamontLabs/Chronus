@@ -1,0 +1,429 @@
+meta:
+  build_hash: ""
+  version: "v0.2-expanded"
+  date: "2025-10-28"
+
+events:
+  # Universal Events (Any Era)
+  - id: ev001
+    name: "Chronostorm"
+    effect: "2x production for 4 hours"
+    trigger_chance: 0.02
+    cooldown_h: 24
+    narrative: "A storm through time increases all output."
+    reward: { chronoshards: 5 }
+  - id: ev002
+    name: "Relic Discovery"
+    effect: "Gain random artifact"
+    trigger_chance: 0.005
+    cooldown_h: 48
+    narrative: "Excavation reveals traces of past civilizations."
+    reward: { random_relic: 1 }
+  - id: ev003
+    name: "Ethical Crisis"
+    effect: "Choice-driven resource penalty or bonus"
+    trigger_chance: 0.01
+    cooldown_h: 72
+    narrative: "Your society faces a moral dilemma."
+    choices:
+      - { option: "Take the moral path", effect: { morale: 20, resources: -0.10 } }
+      - { option: "Take the pragmatic path", effect: { morale: -10, resources: 0.20 } }
+  - id: ev004
+    name: "Golden Age"
+    effect: "1.5x efficiency for 12 hours"
+    trigger_chance: 0.015
+    cooldown_h: 96
+    narrative: "Culture flourishes; production surges."
+    reward: { culture: 100, morale: 15 }
+  - id: ev005
+    name: "Meteor Shower"
+    effect: "Gain rare resources"
+    trigger_chance: 0.008
+    cooldown_h: 120
+    narrative: "The sky rains cosmic gifts."
+    reward: { rare_materials: 50, gems: 25 }
+  
+  # Fire Age Events
+  - id: ev_fire_001
+    name: "Wildfire"
+    era: "fire"
+    effect: "Lose 20% wood, gain fire knowledge"
+    trigger_chance: 0.03
+    cooldown_h: 48
+    narrative: "A wildfire ravages the forest."
+    reward: { knowledge: 20, wood: -0.20 }
+  - id: ev_fire_002
+    name: "Mammoth Migration"
+    era: "fire"
+    effect: "2x food for 6 hours"
+    trigger_chance: 0.025
+    cooldown_h: 72
+    narrative: "Herds pass through your lands."
+    reward: { food: 200, hide: 100 }
+  - id: ev_fire_003
+    name: "Cave Discovery"
+    era: "fire"
+    effect: "Find shelter and artifacts"
+    trigger_chance: 0.015
+    cooldown_h: 96
+    narrative: "Your people discover a mysterious cave."
+    reward: { housing: 50, artifacts: 1 }
+  - id: ev_fire_004
+    name: "Tribal Gathering"
+    era: "fire"
+    effect: "Increase morale and culture"
+    trigger_chance: 0.02
+    cooldown_h: 48
+    narrative: "Tribes unite for ceremony and trade."
+    reward: { morale: 25, culture: 50 }
+  - id: ev_fire_005
+    name: "First Fire Mastery"
+    era: "fire"
+    effect: "Permanent fire bonus"
+    trigger_chance: 0.005
+    cooldown_h: 240
+    narrative: "Your people master the eternal flame."
+    reward: { fire_bonus: 0.10, energy: 50 }
+  
+  # Stone Age Events
+  - id: ev_stone_001
+    name: "Megalith Construction"
+    era: "stone"
+    effect: "Gain faith and knowledge"
+    trigger_chance: 0.02
+    cooldown_h: 72
+    narrative: "Ancient stones align with cosmic forces."
+    reward: { faith: 100, knowledge: 50 }
+  - id: ev_stone_002
+    name: "Earthquake"
+    era: "stone"
+    effect: "Damage buildings but reveal stone"
+    trigger_chance: 0.015
+    cooldown_h: 96
+    narrative: "The earth shakes and splits."
+    reward: { stone: 500, building_damage: 0.10 }
+  - id: ev_stone_003
+    name: "Druid's Blessing"
+    era: "stone"
+    effect: "Boost all production"
+    trigger_chance: 0.012
+    cooldown_h: 120
+    narrative: "The old ways bring prosperity."
+    reward: { all_resources: 0.15, faith: 75 }
+  - id: ev_stone_004
+    name: "Sacred Grove Found"
+    era: "stone"
+    effect: "Unlock special flora"
+    trigger_chance: 0.008
+    cooldown_h: 144
+    narrative: "A place of ancient power is discovered."
+    reward: { special_plants: 3, faith: 50 }
+  - id: ev_stone_005
+    name: "Stone Circle Ritual"
+    era: "stone"
+    effect: "Major faith and morale boost"
+    trigger_chance: 0.01
+    cooldown_h: 168
+    narrative: "The ancestors speak through stone."
+    reward: { faith: 200, morale: 30, knowledge: 100 }
+  
+  # Bronze Age Events
+  - id: ev_bronze_001
+    name: "Trade Caravan Arrives"
+    era: "bronze"
+    effect: "Exchange resources for culture"
+    trigger_chance: 0.025
+    cooldown_h: 48
+    narrative: "Merchants from distant lands arrive."
+    reward: { culture: 100, influence: 50, exotic_goods: 25 }
+  - id: ev_bronze_002
+    name: "Pirate Raid"
+    era: "bronze"
+    effect: "Lose resources or fight back"
+    trigger_chance: 0.02
+    cooldown_h: 72
+    narrative: "Raiders threaten your coastal settlements."
+    choices:
+      - { option: "Pay tribute", effect: { resources: -0.15, safety: 1 } }
+      - { option: "Fight back", effect: { military_power: 0.20, casualties: 50 } }
+  - id: ev_bronze_003
+    name: "Bronze Age Invention"
+    era: "bronze"
+    effect: "Research breakthrough"
+    trigger_chance: 0.015
+    cooldown_h: 96
+    narrative: "Your smiths perfect a new technique."
+    reward: { bronze: 100, research_speed: 0.10, knowledge: 75 }
+  - id: ev_bronze_004
+    name: "Royal Wedding"
+    era: "bronze"
+    effect: "Diplomatic relations improve"
+    trigger_chance: 0.012
+    cooldown_h: 120
+    narrative: "Alliances sealed through marriage."
+    reward: { influence: 200, culture: 150, morale: 25 }
+  - id: ev_bronze_005
+    name: "Temple Consecration"
+    era: "bronze"
+    effect: "Massive faith boost"
+    trigger_chance: 0.01
+    cooldown_h: 144
+    narrative: "The gods bless your grand temple."
+    reward: { faith: 300, culture: 100, morale: 30 }
+  
+  # Iron Age Events
+  - id: ev_iron_001
+    name: "Military Conquest"
+    era: "iron"
+    effect: "Gain territory and resources"
+    trigger_chance: 0.02
+    cooldown_h: 72
+    narrative: "Your legions expand the empire."
+    reward: { territory: 1, influence: 150, tribute: 200 }
+  - id: ev_iron_002
+    name: "Plague Outbreak"
+    era: "iron"
+    effect: "Population loss but medical knowledge"
+    trigger_chance: 0.015
+    cooldown_h: 96
+    narrative: "Disease sweeps through cities."
+    reward: { population: -0.20, knowledge: 100, medicine: 50 }
+  - id: ev_iron_003
+    name: "Library Fire"
+    era: "iron"
+    effect: "Lose knowledge but rebuild stronger"
+    trigger_chance: 0.01
+    cooldown_h: 120
+    narrative: "Flames consume ancient texts."
+    choices:
+      - { option: "Salvage what remains", effect: { knowledge: -0.30, artifacts: 5 } }
+      - { option: "Rebuild immediately", effect: { knowledge: -0.50, research_bonus: 0.25 } }
+  - id: ev_iron_004
+    name: "Glasswork Innovation"
+    era: "iron"
+    effect: "Unlock glass production"
+    trigger_chance: 0.018
+    cooldown_h: 84
+    narrative: "Artisans discover the secret of glass."
+    reward: { glass: 100, knowledge: 50, culture: 75 }
+  - id: ev_iron_005
+    name: "Philosopher's Discourse"
+    era: "iron"
+    effect: "Major knowledge gain"
+    trigger_chance: 0.012
+    cooldown_h: 108
+    narrative: "Great minds debate the nature of reality."
+    reward: { knowledge: 250, culture: 100, research_speed: 0.15 }
+  
+  # Industrial Age Events
+  - id: ev_industrial_001
+    name: "Steam Revolution"
+    era: "industrial"
+    effect: "2x energy production for 8 hours"
+    trigger_chance: 0.025
+    cooldown_h: 60
+    narrative: "Steam engines transform industry."
+    reward: { energy: 500, automation: 0.10 }
+  - id: ev_industrial_002
+    name: "Labor Strike"
+    era: "industrial"
+    effect: "Production halts unless resolved"
+    trigger_chance: 0.02
+    cooldown_h: 72
+    narrative: "Workers demand better conditions."
+    choices:
+      - { option: "Meet demands", effect: { morale: 20, resources: -0.15 } }
+      - { option: "Suppress strike", effect: { morale: -30, production: 0.20 } }
+  - id: ev_industrial_003
+    name: "Oil Gusher"
+    era: "industrial"
+    effect: "Massive oil discovery"
+    trigger_chance: 0.015
+    cooldown_h: 96
+    narrative: "Black gold erupts from the earth."
+    reward: { oil: 2000, energy: 1000, wealth: 500 }
+  - id: ev_industrial_004
+    name: "Railroad Expansion"
+    era: "industrial"
+    effect: "Connect new territories"
+    trigger_chance: 0.018
+    cooldown_h: 84
+    narrative: "Steel rails unite the nation."
+    reward: { expansion: 2, trade_efficiency: 0.20, influence: 100 }
+  - id: ev_industrial_005
+    name: "World's Fair"
+    era: "industrial"
+    effect: "Culture and innovation boom"
+    trigger_chance: 0.01
+    cooldown_h: 168
+    narrative: "Nations showcase their achievements."
+    reward: { culture: 500, knowledge: 300, morale: 40 }
+  
+  # Digital Age Events
+  - id: ev_digital_001
+    name: "Silicon Boom"
+    era: "digital"
+    effect: "3x silicon production for 6 hours"
+    trigger_chance: 0.025
+    cooldown_h: 60
+    narrative: "The chip revolution accelerates."
+    reward: { silicon: 500, semiconductors: 200 }
+  - id: ev_digital_002
+    name: "Cyber Attack"
+    era: "digital"
+    effect: "Data loss but security improvement"
+    trigger_chance: 0.02
+    cooldown_h: 72
+    narrative: "Hackers breach your systems."
+    reward: { data: -0.25, security: 0.30, knowledge: 100 }
+  - id: ev_digital_003
+    name: "AI Breakthrough"
+    era: "digital"
+    effect: "Automation surge"
+    trigger_chance: 0.015
+    cooldown_h: 96
+    narrative: "Artificial intelligence achieves sentience."
+    reward: { automation: 0.50, data: 1000, knowledge: 500 }
+  - id: ev_digital_004
+    name: "Satellite Launch"
+    era: "digital"
+    effect: "Global connectivity achieved"
+    trigger_chance: 0.018
+    cooldown_h: 84
+    narrative: "Your satellites orbit the world."
+    reward: { global_vision: 1.0, data: 500, influence: 200 }
+  - id: ev_digital_005
+    name: "Digital Revolution"
+    era: "digital"
+    effect: "Society transforms"
+    trigger_chance: 0.01
+    cooldown_h: 144
+    narrative: "The world becomes one network."
+    reward: { data: 2000, culture: 300, all_efficiency: 0.25 }
+  
+  # Quantum Age Events
+  - id: ev_quantum_001
+    name: "Quantum Fluctuation"
+    era: "quantum"
+    effect: "Reality warps temporarily"
+    trigger_chance: 0.025
+    cooldown_h: 48
+    narrative: "The fabric of space-time ripples."
+    reward: { quantum_bits: 50, chronoshards: 10 }
+  - id: ev_quantum_002
+    name: "Antimatter Accident"
+    era: "quantum"
+    effect: "Massive energy release"
+    trigger_chance: 0.015
+    cooldown_h: 96
+    narrative: "Containment fails catastrophically."
+    choices:
+      - { option: "Evacuate", effect: { population: -0.10, safety: 1 } }
+      - { option: "Contain it", effect: { antimatter: 100, casualties: 100 } }
+  - id: ev_quantum_003
+    name: "Time Paradox"
+    era: "quantum"
+    effect: "Temporal anomaly effects"
+    trigger_chance: 0.012
+    cooldown_h: 120
+    narrative: "Past and future collide."
+    reward: { chronoshards: 25, eternity_fragments: 5, knowledge: 500 }
+  - id: ev_quantum_004
+    name: "Dark Matter Discovery"
+    era: "quantum"
+    effect: "New physics unlocked"
+    trigger_chance: 0.01
+    cooldown_h: 144
+    narrative: "The invisible universe reveals itself."
+    reward: { dark_matter: 50, knowledge: 1000, research_speed: 0.50 }
+  - id: ev_quantum_005
+    name: "Fusion Breakthrough"
+    era: "quantum"
+    effect: "Unlimited energy achieved"
+    trigger_chance: 0.008
+    cooldown_h: 168
+    narrative: "Stars' power flows through your grid."
+    reward: { fusion_cores: 100, energy: 10000, all_production: 0.50 }
+  
+  # Ascension Events
+  - id: ev_ascension_001
+    name: "Cosmic Alignment"
+    era: "ascension"
+    effect: "All resources surge"
+    trigger_chance: 0.02
+    cooldown_h: 72
+    narrative: "The universe acknowledges your ascension."
+    reward: { all_resources: 0.50, essence: 100 }
+  - id: ev_ascension_002
+    name: "Void Incursion"
+    era: "ascension"
+    effect: "Battle cosmic entities"
+    trigger_chance: 0.015
+    cooldown_h: 96
+    narrative: "Beings from beyond challenge you."
+    choices:
+      - { option: "Negotiate", effect: { essence: 50, knowledge: 1000 } }
+      - { option: "Fight", effect: { essence: 200, casualties: 500 } }
+  - id: ev_ascension_003
+    name: "Eternity Glimpse"
+    era: "ascension"
+    effect: "See all possible futures"
+    trigger_chance: 0.01
+    cooldown_h: 144
+    narrative: "Time becomes transparent to you."
+    reward: { eternity_fragments: 25, chronoshards: 100, omniscience: 1 }
+  - id: ev_ascension_004
+    name: "Divine Ascension"
+    era: "ascension"
+    effect: "Godhood approaches"
+    trigger_chance: 0.008
+    cooldown_h: 168
+    narrative: "Mortality falls away like old skin."
+    reward: { essence: 500, celestial_ore: 200, transcendence: 0.50 }
+  - id: ev_ascension_005
+    name: "Omega Revelation"
+    era: "ascension"
+    effect: "The end and beginning unite"
+    trigger_chance: 0.005
+    cooldown_h: 240
+    narrative: "You understand the ultimate truth."
+    reward: { all: 2.0, omega_point: 1, true_ending_unlock: true }
+
+  # Secret/Hidden Events
+  - id: ev_secret_001
+    name: "Archive7's Message"
+    effect: "Cryptic guidance from beyond"
+    trigger_chance: 0.001
+    cooldown_h: 480
+    narrative: "A voice from the void speaks your name."
+    reward: { knowledge: 5000, chronoshards: 500, secret_unlock: 1 }
+    hidden: true
+  - id: ev_secret_002
+    name: "The First Spark Returns"
+    effect: "Primordial power awakens"
+    trigger_chance: 0.001
+    cooldown_h: 720
+    narrative: "Where it all began calls to you."
+    reward: { all_fire_resources: 10.0, eternal_flame: 1 }
+    hidden: true
+    requires: "all_eras_complete"
+  - id: ev_secret_003
+    name: "Reality Fracture"
+    effect: "Break through to truth"
+    trigger_chance: 0.0005
+    cooldown_h: 1440
+    narrative: "The simulation reveals itself."
+    reward: { escape_velocity: 1, true_ending: 1 }
+    hidden: true
+    requires: "omega_point"
+
+rotation:
+  daily: ["Chronostorm", "Golden Age", "Meteor Shower"]
+  weekly: ["Relic Discovery", "Ethical Crisis", "Cosmic Alignment"]
+  monthly: ["Divine Ascension", "Reality Fracture"]
+
+event_triggers:
+  population_based: ["Plague Outbreak", "Labor Strike", "Tribal Gathering"]
+  resource_based: ["Wildfire", "Oil Gusher", "Silicon Boom"]
+  progress_based: ["Bronze Age Invention", "AI Breakthrough", "Quantum Fluctuation"]
+  random_chance: ["Meteor Shower", "Earthquake", "Cyber Attack"]

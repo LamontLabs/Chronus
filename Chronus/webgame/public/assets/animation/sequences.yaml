@@ -1,0 +1,30 @@
+meta:
+  build_hash: ""
+  version: "v0.1-alpha"
+  date: "2025-10-27"
+
+sequences:
+  era_transition:
+    steps:
+      - { action: "fade_out", duration_ms: 300 }
+      - { action: "particle_dissolve", duration_ms: 400 }
+      - { action: "hue_shift", duration_ms: 500 }
+      - { action: "geometry_morph", duration_ms: 600 }
+      - { action: "fade_in", duration_ms: 200 }
+  prestige_ritual:
+    steps:
+      - { action: "desaturate", duration_ms: 300 }
+      - { action: "whiteout", duration_ms: 200 }
+      - { action: "flare_column", duration_ms: 400 }
+      - { action: "reignite_color", duration_ms: 600 }
+  relic_reveal:
+    steps:
+      - { action: "zoom_in", duration_ms: 1000 }
+      - { action: "rotate", duration_ms: 500 }
+      - { action: "float", duration_ms: 1200 }
+      - { action: "text_fade", duration_ms: 400 }
+  event_ping:
+    steps:
+      - { action: "banner_drop", duration_ms: 300 }
+      - { action: "pulse", duration_ms: 500 }
+      - { action: "banner_hide", duration_ms: 300 }

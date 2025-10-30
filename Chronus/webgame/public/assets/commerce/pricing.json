@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "version": "v0.2-player-value",
+    "date": "2025-10-28",
+    "philosophy": "2× More Value, 50-70% Lower Prices"
+  },
+  "value_proposition": {
+    "tagline": "The Ethical Idle Game - Double the Content, Half the Price",
+    "key_messages": [
+      "Premium unlock: $1.99 vs. competitors' $4.99 (60% savings)",
+      "Season pass: $4.99 with 100 rewards vs. competitors' $12.99 for 50 (62% savings + 2× content)",
+      "All cosmetics: $1.99 vs. competitors' $10+ (80% savings)",
+      "No pay-to-win, no loot boxes, no dark patterns",
+      "40% of season rewards FREE for everyone",
+      "Transparent odds, fair pricing, player-first design"
+    ]
+  },
+  "competitive_comparison": {
+    "premium_unlock": {
+      "chronus_price": 1.99,
+      "competitor_avg": 4.99,
+      "chronus_features": 20,
+      "competitor_features": 8,
+      "value_multiplier": 2.5
+    },
+    "season_pass": {
+      "chronus_price": 4.99,
+      "competitor_avg": 12.99,
+      "chronus_rewards": 100,
+      "competitor_rewards": 50,
+      "free_rewards_chronus": 40,
+      "free_rewards_competitor": 10,
+      "value_multiplier": 4.0
+    },
+    "cosmetic_theme": {
+      "chronus_price": 0.99,
+      "competitor_avg": 2.99,
+      "chronus_single": "OR get all 8 for $1.99",
+      "competitor_single": "Must buy separately",
+      "value_multiplier": 3.0
+    },
+    "currency_pack": {
+      "chronus_250_shards": 1.99,
+      "competitor_250_gems": 4.99,
+      "savings_percent": 60
+    }
+  },
+  "pricing_tiers": {
+    "impulse": {
+      "price_range": "0.99",
+      "products": ["Single themes", "100 chronoshards", "4h boost"],
+      "conversion_target": "10-15%",
+      "description": "Low friction, high volume"
+    },
+    "value": {
+      "price_range": "1.99-2.99",
+      "products": ["Premium unlock", "Mega cosmetics pack", "Starter bundle"],
+      "conversion_target": "8-12%",
+      "description": "Sweet spot for ethical monetization"
+    },
+    "premium": {
+      "price_range": "3.99-4.99",
+      "products": ["Season pass", "Prestige bundles", "Currency packs"],
+      "conversion_target": "5-8%",
+      "description": "Engaged players who want progression"
+    },
+    "whale_friendly": {
+      "price_range": "9.99",
+      "products": ["Ultimate value pack"],
+      "conversion_target": "1-2%",
+      "description": "Even whales get amazing value"
+    }
+  },
+  "monetization_mix": {
+    "target_revenue_split": {
+      "premium_iap": 45,
+      "season_pass": 25,
+      "cosmetics": 15,
+      "consumables": 10,
+      "rewarded_ads": 5
+    },
+    "free_player_revenue": "Optional rewarded ads only (30min cooldown)",
+    "paying_player_average_spend": 4.20,
+    "total_payer_conversion": 0.095,
+    "target_conversion_rate": "6-10%",
+    "rationale": "Lower prices × higher conversion > traditional high-price low-conversion",
+    "notes": "ARPPU of $4.20 reflects weighted mix of $1.99 premium (5%), $2.99 starter (3%), $4.99 season (3.5%), $9.99 ultimate (1%), etc."
+  },
+  "retention_economics": {
+    "day_1_retention_target": 35,
+    "day_7_retention_target": 18,
+    "day_30_retention_target": 12,
+    "ltv_target_per_user": 5.00,
+    "arpu_target": 0.40,
+    "arpdau_target": 0.15,
+    "notes": "Above-market retention through value perception and ethical treatment"
+  },
+  "financial_model": {
+    "assumptions": {
+      "monthly_active_users": 10000,
+      "conversion_scenarios": {
+        "premium_only": {"rate": 0.05, "arppu": 1.99},
+        "starter_bundle": {"rate": 0.03, "arppu": 2.99},
+        "season_pass_buyers": {"rate": 0.035, "arppu": 4.99},
+        "cosmetic_buyers": {"rate": 0.02, "arppu": 1.99},
+        "whales_ultimate": {"rate": 0.01, "arppu": 9.99},
+        "recurring_consumables": {"rate": 0.015, "avg_monthly": 3.99}
+      },
+      "ad_revenue_per_mau": 0.12
+    },
+    "monthly_revenue_projection_corrected": {
+      "premium_unlock": 995,
+      "starter_bundle": 897,
+      "season_pass": 1746.50,
+      "cosmetic_packs": 398,
+      "ultimate_pack": 999,
+      "consumables_recurring": 598.50,
+      "rewarded_ads": 1200,
+      "total_monthly": 6834,
+      "arpu": 0.68,
+      "notes": "Realistic model based on actual SKU mix, 10K MAU baseline"
+    },
+    "scaling_projections": {
+      "at_50k_mau": {
+        "monthly_revenue": 34170,
+        "arpu": 0.68,
+        "sustainable": true
+      },
+      "at_100k_mau": {
+        "monthly_revenue": 68340,
+        "arpu": 0.68,
+        "sustainable": true
+      }
+    },
+    "profitability": {
+      "revenue_per_user_month": 0.68,
+      "content_creation_monthly": 2000,
+      "server_hosting_monthly": 500,
+      "payment_processing_3_percent": 205,
+      "marketing_spend_monthly": 2000,
+      "operating_cost_total": 4705,
+      "profit_10k_mau": 2129,
+      "profit_margin_percent": 31,
+      "breakeven_mau": 7000,
+      "sustainable": "Yes at 10K+ MAU",
+      "notes": "Requires steady content updates to maintain retention"
+    },
+    "sustainability_safeguards": {
+      "content_funding": "31% margin funds ongoing expansions",
+      "seasonal_cadence": "4 seasons/year at $4.99 = repeat revenue",
+      "cosmetic_rotation": "New themes quarterly for collectors",
+      "whale_ceiling": "$9.99 ultimate pack respects budget players",
+      "f2p_viability": "100% playable without spending"
+    }
+  },
+  "ad_strategy": {
+    "philosophy": "Optional only, player-controlled",
+    "rewarded_video": {
+      "cooldown_minutes": 30,
+      "rewards": [
+        "4h double yield",
+        "1.5× production boost",
+        "Random resource pack",
+        "Small chronoshard bonus (1-3)"
+      ],
+      "daily_cap": 10,
+      "no_forced_ads": true
+    },
+    "projected_ad_arpu": 0.10,
+    "ad_network": "Google AdMob",
+    "user_experience": "Never interrupt gameplay, always optional"
+  },
+  "transparency_commitments": [
+    "All prices clearly displayed in local currency",
+    "Savings percentages shown vs. market average",
+    "Loot box odds fully disclosed (if any gambling mechanics)",
+    "No bait-and-switch pricing",
+    "No limited-time pressure tactics (except genuine launch specials)",
+    "Refund policy clearly stated",
+    "Spending limits available for players",
+    "Premium unlock is PERMANENT across all devices"
+  ],
+  "anti_dark_patterns": [
+    "No deliberately confusing currency conversions",
+    "No fake urgency timers",
+    "No hidden costs or surprise charges",
+    "No preying on FOMO (fear of missing out)",
+    "No targeting children with purchases",
+    "No obfuscated unsubscribe flows",
+    "Clear value proposition for every SKU"
+  ]
+}

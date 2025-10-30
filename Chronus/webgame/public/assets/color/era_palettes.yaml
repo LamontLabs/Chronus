@@ -1,0 +1,46 @@
+meta:
+  build_hash: ""
+  version: "v0.1-alpha"
+  date: "2025-10-27"
+
+palettes:
+  fire:
+    primary: "#FF7043"
+    secondary: "#FFD54F"
+    accent: "#8D6E63"
+    kelvin_shift: 1200
+  stone:
+    primary: "#A1887F"
+    secondary: "#CFD8DC"
+    accent: "#90A4AE"
+    kelvin_shift: 800
+  bronze:
+    primary: "#D4A373"
+    secondary: "#F6C667"
+    accent: "#6D4C41"
+    kelvin_shift: 400
+  iron:
+    primary: "#546E7A"
+    secondary: "#C62828"
+    accent: "#37474F"
+    kelvin_shift: 0
+  industrial:
+    primary: "#455A64"
+    secondary: "#90A4AE"
+    accent: "#FDD835"
+    kelvin_shift: -400
+  digital:
+    primary: "#00BCD4"
+    secondary: "#607D8B"
+    accent: "#8C9EFF"
+    kelvin_shift: -800
+  quantum:
+    primary: "#9575CD"
+    secondary: "#BA68C8"
+    accent: "#E1BEE7"
+    kelvin_shift: -1200
+  ascension:
+    primary: "#FFF8E1"
+    secondary: "#E0E0E0"
+    accent: "#FFF176"
+    kelvin_shift: -1600

@@ -1,0 +1,15 @@
+{
+  "meta": { "build_hash": "", "version": "v0.1-alpha", "date": "2025-10-27" },
+  "weekly_rotation": [
+    { "week": 1, "events": ["Chronostorm", "Relic Discovery"] },
+    { "week": 2, "events": ["Golden Age"] },
+    { "week": 3, "events": ["Chronostorm"] },
+    { "week": 4, "events": ["Relic Discovery", "Golden Age"] }
+  ],
+  "monthly_theme": [
+    { "month": "Jan", "theme": "Foundations" },
+    { "month": "Apr", "theme": "Industry" },
+    { "month": "Jul", "theme": "Digital Dawn" },
+    { "month": "Oct", "theme": "Quantum Bloom" }
+  ]
+}

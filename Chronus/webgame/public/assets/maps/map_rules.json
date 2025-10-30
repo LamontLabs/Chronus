@@ -1,0 +1,21 @@
+{
+  "meta": { "build_hash": "", "version": "v0.1-alpha", "date": "2025-10-27" },
+  "tile_size_px": 64,
+  "grid_width": 16,
+  "grid_height": 16,
+  "zoom_levels": [0.5, 1.0, 1.5],
+  "camera_smooth_ms": 300,
+  "interaction":
+    {
+      "tap_highlight_ms": 120,
+      "drag_sensitivity": 1.0,
+      "snap_grid": true
+    },
+  "map_layers": ["terrain", "structures", "ui_overlays"],
+  "animation":
+    {
+      "transition_ms": 500,
+      "color_blend": true,
+      "era_shift_transition": true
+    }
+}

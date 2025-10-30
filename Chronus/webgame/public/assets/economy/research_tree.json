@@ -1,0 +1,54 @@
+{
+  "meta": { "build_hash": "", "version": "v0.1-alpha", "date": "2025-10-27" },
+  "branches": [
+    {
+      "id": "efficiency",
+      "label": "Efficiency",
+      "nodes": [
+        { "id": "eff_1", "name": "Refined Tools", "cost": 100, "time_s": 60, "bonus": { "yield_pct": 5 } },
+        { "id": "eff_2", "name": "Optimized Logistics", "cost": 200, "time_s": 120, "bonus": { "yield_pct": 8 } },
+        { "id": "eff_3", "name": "Throughput Theory", "cost": 400, "time_s": 240, "bonus": { "yield_pct": 12 } }
+      ]
+    },
+    {
+      "id": "automation",
+      "label": "Automation",
+      "nodes": [
+        { "id": "auto_1", "name": "Basic Schedulers", "cost": 150, "time_s": 90, "bonus": { "agents_plus": 1 } },
+        { "id": "auto_2", "name": "Drone Bays", "cost": 350, "time_s": 180, "bonus": { "agents_plus": 1 } },
+        { "id": "auto_3", "name": "Self-Tuning Loops", "cost": 800, "time_s": 360, "bonus": { "maintenance_free": true } }
+      ]
+    },
+    {
+      "id": "expansion",
+      "label": "Expansion",
+      "nodes": [
+        { "id": "exp_1", "name": "District Charter", "cost": 120, "time_s": 90, "bonus": { "district_plus": 1 } },
+        { "id": "exp_2", "name": "Biome Survey", "cost": 300, "time_s": 180, "bonus": { "biome_unlock": "mountain" } },
+        { "id": "exp_3", "name": "Anomaly Mapping", "cost": 700, "time_s": 360, "bonus": { "secret_zone": true } }
+      ]
+    },
+    {
+      "id": "culture",
+      "label": "Culture",
+      "nodes": [
+        { "id": "cul_1", "name": "Oral Tradition", "cost": 80, "time_s": 60, "bonus": { "morale_pct": 5 } },
+        { "id": "cul_2", "name": "Great Works", "cost": 220, "time_s": 120, "bonus": { "artifact_find_pct": 5 } },
+        { "id": "cul_3", "name": "Archive Network", "cost": 550, "time_s": 240, "bonus": { "chronicle_boost": true } }
+      ]
+    },
+    {
+      "id": "entropy",
+      "label": "Entropy",
+      "nodes": [
+        { "id": "ent_1", "name": "Anomaly Access", "cost": 180, "time_s": 120, "bonus": { "event_rate_pct": 10 } },
+        { "id": "ent_2", "name": "Temporal Flex", "cost": 420, "time_s": 240, "bonus": { "offline_cap_h": 2 } },
+        { "id": "ent_3", "name": "Paradox Buffer", "cost": 900, "time_s": 480, "bonus": { "fail_safe": true } }
+      ]
+    }
+  ],
+  "formula": {
+    "cost": "100 * (1.45 ** depth)",
+    "time_s": "60 * depth"
+  }
+}

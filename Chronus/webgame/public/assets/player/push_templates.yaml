@@ -1,0 +1,5 @@
+templates:
+  legacy_milestone: "Your civilization crossed a millennium. Claim your legacy!"
+  chronostorm: "A Chronostorm is surging. Production up now."
+limits:
+  max_per_day: 1

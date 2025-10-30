@@ -1,0 +1,312 @@
+{
+  "meta": { 
+    "build_hash": "", 
+    "version": "v0.2-player-value", 
+    "date": "2025-10-28",
+    "value_proposition": "2× more content at 50% lower prices than competitors"
+  },
+  "products": [
+    {
+      "sku": "premium_unlock",
+      "type": "non_consumable",
+      "price_usd": 1.99,
+      "competitor_price": 4.99,
+      "savings_percent": 60,
+      "entitlements": ["no_ads", "extra_saves", "themes_pack", "queue_upgrades", "offline_12h", "auto_prestige"],
+      "content_included": {
+        "themes": 8,
+        "save_slots": 5,
+        "qol_features": 6
+      },
+      "display_name": "Premium Unlock",
+      "description": "Remove ads forever + 8 exclusive themes + quality of life features. 60% cheaper than competitors!",
+      "featured": true,
+      "value_highlight": "Get EVERYTHING competitors charge $4.99 for, at just $1.99"
+    },
+    {
+      "sku": "season_pass_12week",
+      "type": "consumable",
+      "price_usd": 4.99,
+      "competitor_price": 12.99,
+      "savings_percent": 62,
+      "duration_weeks": 12,
+      "entitlements": ["season_pass_active", "bonus_track", "exclusive_relics"],
+      "content_included": {
+        "total_rewards": 100,
+        "free_track_rewards": 40,
+        "premium_track_rewards": 60,
+        "exclusive_relics": 3,
+        "chronoshards_bonus": 500
+      },
+      "display_name": "Chronus Season Pass",
+      "description": "100 rewards over 12 weeks. 40% progress for FREE players. 62% cheaper than competitors!",
+      "featured": true,
+      "value_highlight": "Competitors charge $12.99 for 50 rewards. We give 100 rewards for $4.99!"
+    },
+    {
+      "sku": "starter_bundle",
+      "type": "consumable",
+      "price_usd": 2.99,
+      "competitor_price": 7.99,
+      "savings_percent": 63,
+      "entitlements": ["premium_unlock", "chronoshards_250", "resource_boost_7d"],
+      "content_included": {
+        "premium": true,
+        "chronoshards": 250,
+        "boost_duration_days": 7
+      },
+      "display_name": "Starter Bundle",
+      "description": "Premium unlock + 250 chronoshards + 7-day boost. Best value!",
+      "limited_offer": "first_purchase_only",
+      "value_highlight": "Premium ($1.99) + Currency ($2.99) + Boost ($1.99) = $6.97 value for $2.99!"
+    },
+    {
+      "sku": "voicepack_archive7_a",
+      "type": "non_consumable",
+      "price_usd": 0.99,
+      "competitor_price": 2.99,
+      "savings_percent": 67,
+      "entitlements": ["voice_archive7_set_a"],
+      "content_included": {
+        "voice_lines": 50,
+        "eras_covered": 4
+      },
+      "display_name": "Archive7 Voice Pack A",
+      "description": "50 voiced lines for Fire-Iron Ages. 67% cheaper than competitors!"
+    },
+    {
+      "sku": "voicepack_archive7_b",
+      "type": "non_consumable",
+      "price_usd": 0.99,
+      "competitor_price": 2.99,
+      "savings_percent": 67,
+      "entitlements": ["voice_archive7_set_b"],
+      "content_included": {
+        "voice_lines": 50,
+        "eras_covered": 4
+      },
+      "display_name": "Archive7 Voice Pack B",
+      "description": "50 voiced lines for Industrial-Ascension Ages. 67% cheaper!"
+    },
+    {
+      "sku": "cosmetics_mega_pack",
+      "type": "non_consumable",
+      "price_usd": 1.99,
+      "competitor_price": 9.99,
+      "savings_percent": 80,
+      "entitlements": ["all_themes", "all_voicepacks", "particle_effects", "building_skins"],
+      "content_included": {
+        "themes": 8,
+        "voicepacks": 2,
+        "particle_effects": 15,
+        "building_skins": 20
+      },
+      "display_name": "Complete Cosmetics Collection",
+      "description": "ALL cosmetics forever! Normally $9.99+ worth of content.",
+      "value_highlight": "Competitors charge $2.99 per theme. We give all 8 themes + voices + effects for $1.99!"
+    },
+    {
+      "sku": "city_theme_fire",
+      "type": "non_consumable",
+      "price_usd": 0.99,
+      "competitor_price": 2.99,
+      "entitlements": ["ui_fire_theme"]
+    },
+    {
+      "sku": "city_theme_stone",
+      "type": "non_consumable",
+      "price_usd": 0.99,
+      "competitor_price": 2.99,
+      "entitlements": ["ui_stone_theme"]
+    },
+    {
+      "sku": "city_theme_bronze",
+      "type": "non_consumable",
+      "price_usd": 0.99,
+      "competitor_price": 2.99,
+      "entitlements": ["ui_bronze_theme"]
+    },
+    {
+      "sku": "city_theme_iron",
+      "type": "non_consumable",
+      "price_usd": 0.99,
+      "competitor_price": 2.99,
+      "entitlements": ["ui_iron_theme"]
+    },
+    {
+      "sku": "chronoshards_100",
+      "type": "consumable",
+      "price_usd": 0.99,
+      "competitor_price": 1.99,
+      "savings_percent": 50,
+      "entitlements": ["chronoshards_100"],
+      "display_name": "100 Chronoshards",
+      "description": "Premium currency for prestige upgrades. 50% cheaper!"
+    },
+    {
+      "sku": "chronoshards_250",
+      "type": "consumable",
+      "price_usd": 1.99,
+      "competitor_price": 4.99,
+      "savings_percent": 60,
+      "entitlements": ["chronoshards_250"],
+      "display_name": "250 Chronoshards",
+      "description": "Best value currency pack. 60% savings!"
+    },
+    {
+      "sku": "chronoshards_600",
+      "type": "consumable",
+      "price_usd": 3.99,
+      "competitor_price": 9.99,
+      "savings_percent": 60,
+      "entitlements": ["chronoshards_600"],
+      "display_name": "600 Chronoshards",
+      "description": "Premium currency mega pack. 60% cheaper!"
+    },
+    {
+      "sku": "idle_boost_4h",
+      "type": "consumable",
+      "price_usd": 0.99,
+      "competitor_price": 1.99,
+      "savings_percent": 50,
+      "duration_hours": 4,
+      "entitlements": ["production_2x_4h"],
+      "display_name": "4-Hour Double Production",
+      "description": "2× all resources for 4 hours. Half price!"
+    },
+    {
+      "sku": "idle_boost_24h",
+      "type": "consumable",
+      "price_usd": 2.99,
+      "competitor_price": 5.99,
+      "savings_percent": 50,
+      "duration_hours": 24,
+      "entitlements": ["production_2x_24h"],
+      "display_name": "24-Hour Double Production",
+      "description": "2× production for a full day. 50% off!"
+    },
+    {
+      "sku": "prestige_boost_bundle",
+      "type": "consumable",
+      "price_usd": 3.99,
+      "competitor_price": 7.99,
+      "savings_percent": 50,
+      "entitlements": ["chronoshards_200", "prestige_multiplier_temp_1.25", "relic_random_rare"],
+      "content_included": {
+        "chronoshards": 200,
+        "prestige_boost": 1.25,
+        "rare_relics": 1
+      },
+      "display_name": "Prestige Booster Bundle",
+      "description": "200 shards + 25% prestige boost + rare relic. Half price!"
+    },
+    {
+      "sku": "era_unlock_digital",
+      "type": "consumable",
+      "price_usd": 2.99,
+      "competitor_price": 9.99,
+      "savings_percent": 70,
+      "entitlements": ["skip_to_digital_age", "digital_starter_pack"],
+      "content_included": {
+        "skip_unlocked": true,
+        "starter_resources": true
+      },
+      "display_name": "Digital Age Jump Start",
+      "description": "Skip to Digital Age + starter resources. 70% savings!",
+      "value_highlight": "Competitors charge $9.99 to skip eras. We charge $2.99!"
+    },
+    {
+      "sku": "relic_mystery_box",
+      "type": "consumable",
+      "price_usd": 1.49,
+      "competitor_price": 4.99,
+      "savings_percent": 70,
+      "entitlements": ["relic_random_guaranteed"],
+      "content_included": {
+        "guaranteed_relic": 1,
+        "rarity_chances": {
+          "uncommon": 0.50,
+          "rare": 0.30,
+          "legendary": 0.15,
+          "mythic": 0.05
+        }
+      },
+      "display_name": "Relic Mystery Box",
+      "description": "Guaranteed relic! 70% cheaper than competitors.",
+      "transparent_odds": true
+    },
+    {
+      "sku": "ultimate_value_pack",
+      "type": "consumable",
+      "price_usd": 9.99,
+      "competitor_price": 29.99,
+      "savings_percent": 67,
+      "entitlements": ["premium_unlock", "season_pass_active", "chronoshards_600", "cosmetics_mega_pack"],
+      "content_included": {
+        "premium": true,
+        "season_pass": true,
+        "chronoshards": 600,
+        "all_cosmetics": true
+      },
+      "display_name": "Ultimate Value Pack",
+      "description": "EVERYTHING! Premium + Season + Currency + All Cosmetics.",
+      "limited_offer": "launch_special",
+      "value_highlight": "Worth $30+ in competitors' games. Only $9.99 here!",
+      "featured": true
+    },
+    {
+      "sku": "collectors_season_bundle",
+      "type": "consumable",
+      "price_usd": 7.99,
+      "competitor_price": 19.99,
+      "savings_percent": 60,
+      "entitlements": ["season_pass_active", "chronoshards_400", "exclusive_relic_guaranteed", "season_cosmetics"],
+      "content_included": {
+        "season_pass": true,
+        "chronoshards": 400,
+        "exclusive_relics": 1,
+        "season_theme": 1
+      },
+      "display_name": "Collector's Season Bundle",
+      "description": "Season Pass + 400 shards + guaranteed relic + seasonal theme",
+      "value_highlight": "For engaged players who want the full seasonal experience"
+    },
+    {
+      "sku": "patron_supporter_pack",
+      "type": "consumable",
+      "price_usd": 14.99,
+      "competitor_price": 49.99,
+      "savings_percent": 70,
+      "entitlements": ["premium_unlock", "season_pass_active", "chronoshards_1000", "cosmetics_mega_pack", "patron_badge", "early_access_features"],
+      "content_included": {
+        "everything_current": true,
+        "chronoshards": 1000,
+        "patron_recognition": true,
+        "beta_features": true
+      },
+      "display_name": "Patron Supporter Pack",
+      "description": "Support ethical game development! Ultimate + extra shards + patron badge + early feature access.",
+      "limited_offer": "optional_supporter_tier",
+      "value_highlight": "For players who want to support fair monetization. Worth $50+ in competitors' games!",
+      "featured": false,
+      "notes": "Optional whale tier that still offers amazing value while supporting ongoing development"
+    }
+  ],
+  "pricing_philosophy": {
+    "core_principle": "Players should get MORE for LESS",
+    "target_savings": "50-70% below competitor prices",
+    "revenue_model": "Higher conversion through better value + optional ads",
+    "transparency": "All odds disclosed, no hidden costs, fair pricing",
+    "no_pay_to_win": "Cosmetics and convenience only, never competitive advantage"
+  },
+  "bundles_strategy": {
+    "starter_bundle": "Best first-purchase value to convert free players",
+    "ultimate_pack": "Launch special combining everything",
+    "mega_cosmetics": "All cosmetics in one purchase vs. nickel-and-diming"
+  },
+  "receipts": { 
+    "hash_algo": "sha256", 
+    "store": "play",
+    "verification": "all_purchases_logged_with_timestamps"
+  }
+}

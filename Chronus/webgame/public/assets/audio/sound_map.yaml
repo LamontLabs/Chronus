@@ -1,0 +1,27 @@
+meta:
+  build_hash: ""
+  version: "v0.1-alpha"
+  date: "2025-10-27"
+
+sfx:
+  tap: { path: "audio/ui/tap.ogg", volume: 0.5 }
+  upgrade: { path: "audio/ui/upgrade.ogg", volume: 0.6 }
+  prestige: { path: "audio/ui/prestige.ogg", volume: 0.7 }
+  achievement: { path: "audio/ui/achievement.ogg", volume: 0.8 }
+  event_trigger: { path: "audio/events/event_trigger.ogg", volume: 0.8 }
+
+music:
+  fire: { path: "audio/music/fire.ogg", loop: true, volume: 0.4 }
+  stone: { path: "audio/music/stone.ogg", loop: true, volume: 0.4 }
+  bronze: { path: "audio/music/bronze.ogg", loop: true, volume: 0.4 }
+  iron: { path: "audio/music/iron.ogg", loop: true, volume: 0.4 }
+  industrial: { path: "audio/music/industrial.ogg", loop: true, volume: 0.4 }
+  digital: { path: "audio/music/digital.ogg", loop: true, volume: 0.4 }
+  quantum: { path: "audio/music/quantum.ogg", loop: true, volume: 0.4 }
+  ascension: { path: "audio/music/ascension.ogg", loop: true, volume: 0.4 }
+
+mixing:
+  master_db: -8
+  music_db: -12
+  sfx_db: -6
+  limiter_ceiling_db: -0.5
